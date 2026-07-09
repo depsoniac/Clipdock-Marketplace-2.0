@@ -1,2 +1,1 @@
-﻿{"schema":"clipdock.registry.v2","registryVersion":2,"updatedAt":"2026-07-09","name":"ClipDock Marketplace 2.0","discovery":{"type":"folder-index","pluginsFolderUrl":"https://raw.githubusercontent.com/depsonopsito/Clipdock-Marketplace-2.0/main/plugins/","folderIndexFile":"index.json","manifestFile":"plugin.json"}}
-
+﻿{"schema":"clipdock.registry.v2","registryVersion":2,"updatedAt":"2026-07-09","name":"ClipDock Marketplace 2.0","discovery":{"type":"folder-index","pluginsFolderUrl":"https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/","folderIndexFile":"index.json","manifestFile":"plugin.json"}}
