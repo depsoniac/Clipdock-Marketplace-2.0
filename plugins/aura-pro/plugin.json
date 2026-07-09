@@ -1,0 +1,90 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "aura-pro",
+    "slug":  "aura-pro",
+    "name":  "Aura Pro",
+    "author":  "Animateo",
+    "authorLocation":  "Colombia",
+    "category":  "after-effects",
+    "type":  "after-effects-script",
+    "host":  [
+                 "After Effects"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Gestor avanzado de paletas de color para After Effects.",
+    "description":  "Panel ScriptUI para organizar, extraer y aplicar colores: paletas múltiples por proyecto, aplicación de relleno/trazo con un clic, sincronización con la selección e importación/exportación en JSON.",
+    "installDirName":  "aura-pro",
+    "tags":  [
+                 "After Effects",
+                 "Script",
+                 "Color"
+             ],
+    "links":  {
+                  "github":  "https://github.com/Animateoo",
+                  "instagram":  "https://www.instagram.com/animateoo/",
+                  "email":  "mateosistema@gmail.com",
+                  "support":  "mailto:mateosistema@gmail.com?subject=Soporte%20Aura%20Pro"
+              },
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "credit":  {
+                   "by":  "Animateo",
+                   "location":  "Colombia",
+                   "github":  "https://github.com/Animateoo",
+                   "instagram":  "https://www.instagram.com/animateoo/",
+                   "email":  "mateosistema@gmail.com"
+               },
+    "details":  [
+                    {
+                        "title":  "Paletas múltiples",
+                        "text":  "Organiza tus colores por cliente o proyecto y compártelos vía archivos JSON."
+                    },
+                    {
+                        "title":  "Aplicación inteligente",
+                        "text":  "Un clic para Relleno o Shift+Clic para Trazo; intercambia Fill/Stroke al instante."
+                    },
+                    {
+                        "title":  "Extrae de la selección",
+                        "text":  "Detecta y extrae automáticamente los colores de los objetos seleccionados."
+                    },
+                    {
+                        "title":  "Hecho por Animateo (Colombia)",
+                        "text":  "Este complemento fue creado por Animateo, de Colombia. Si te sirvió, síguelo: GitHub github.com/Animateoo · Instagram @animateoo · Correo mateosistema@gmail.com"
+                    }
+                ],
+    "installMode":  "download-ae-script",
+    "aeScriptFile":  "Aura Pro.jsx",
+    "installTarget":  "After Effects \u003e Scripts \u003e ScriptUI Panels",
+    "creator":  {
+                    "handle":  "Animateoo",
+                    "name":  "Animateo",
+                    "github":  "https://github.com/Animateoo",
+                    "avatar":  "https://github.com/Animateoo.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-Aura-Pro",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-Aura-Pro"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "aura-pro-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "aura-pro-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+

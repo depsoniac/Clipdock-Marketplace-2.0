@@ -1,0 +1,90 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "graph-editor-ae",
+    "slug":  "graph-editor-ae",
+    "name":  "GraphEditor",
+    "author":  "Animateo",
+    "authorLocation":  "Colombia",
+    "category":  "adobe",
+    "type":  "adobe-cep",
+    "host":  [
+                 "After Effects"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Editor visual de curvas Bézier y velocidad para After Effects.",
+    "description":  "Panel CEP para controlar influencia y velocidad de tus keyframes de forma gráfica, con presets de ease y aplicación en tiempo real sobre el Graph Editor nativo.",
+    "installDirName":  "graph-editor-ae",
+    "tags":  [
+                 "After Effects",
+                 "CEP",
+                 "Animación"
+             ],
+    "links":  {
+                  "github":  "https://github.com/Animateoo",
+                  "instagram":  "https://www.instagram.com/animateoo/",
+                  "email":  "mateosistema@gmail.com",
+                  "support":  "mailto:mateosistema@gmail.com?subject=Soporte%20GraphEditor"
+              },
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "credit":  {
+                   "by":  "Animateo",
+                   "location":  "Colombia",
+                   "github":  "https://github.com/Animateoo",
+                   "instagram":  "https://www.instagram.com/animateoo/",
+                   "email":  "mateosistema@gmail.com"
+               },
+    "details":  [
+                    {
+                        "title":  "Editor visual de curvas",
+                        "text":  "Manipula los manejadores de influencia y velocidad desde una interfaz amigable, sin pelear con el editor de gráficos nativo."
+                    },
+                    {
+                        "title":  "Control de influencia y speed",
+                        "text":  "Ajusta numérica o visualmente el comportamiento de tus animaciones, con soporte multicapa y multipropiedad."
+                    },
+                    {
+                        "title":  "Presets de ease",
+                        "text":  "Aplica configuraciones de facilidad predefinidas al instante para flujos de trabajo veloces."
+                    },
+                    {
+                        "title":  "Hecho por Animateo (Colombia)",
+                        "text":  "Este complemento fue creado por Animateo, de Colombia. Si te sirvió, síguelo: GitHub github.com/Animateoo · Instagram @animateoo · Correo mateosistema@gmail.com"
+                    }
+                ],
+    "installMode":  "download-adobe-cep",
+    "cepSubdir":  "cep",
+    "cepDirName":  "GraphEditor",
+    "creator":  {
+                    "handle":  "Animateoo",
+                    "name":  "Animateo",
+                    "github":  "https://github.com/Animateoo",
+                    "avatar":  "https://github.com/Animateoo.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-Graph-Editor-AE",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-Graph-Editor-AE"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "graph-editor-ae-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "graph-editor-ae-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+

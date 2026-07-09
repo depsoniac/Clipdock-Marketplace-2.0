@@ -1,0 +1,85 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "premiere-hybrid-organizer",
+    "slug":  "premiere-hybrid-organizer",
+    "name":  "PR Hybrid Organizer",
+    "author":  "Depson",
+    "category":  "adobe",
+    "type":  "adobe-cep",
+    "host":  [
+                 "Adobe CEP",
+                 "Premiere Pro"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Organiza bins y consolida medios en la carpeta del proyecto, directo en Premiere Pro.",
+    "description":  "Panel CEP híbrido: ordena automáticamente el panel de proyecto en bins y mueve o copia los medios usados a la carpeta del proyecto para dejarlo portable y limpio.",
+    "installMode":  "download-adobe-cep",
+    "installDirName":  "premiere-hybrid-organizer",
+    "tags":  [
+                 "Adobe CEP",
+                 "Premiere",
+                 "Organización",
+                 "Medios"
+             ],
+    "cepSubdir":  "cep",
+    "cepDirName":  "PremiereHybridOrganizer",
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "links":  {
+                  "support":  "mailto:depsoncontacto@gmail.com?subject=Bug%20PR%20Hybrid%20Organizer"
+              },
+    "details":  [
+                    {
+                        "title":  "Tu proyecto necesita su propia carpeta",
+                        "text":  "Guarda el .prproj en una carpeta dedicada antes de usarlo: esa carpeta es la raíz donde el complemento organiza y consolida todo el material."
+                    },
+                    {
+                        "title":  "Organiza el panel en un clic",
+                        "text":  "“Solo organizar panel” reordena los bins del proyecto — Secuencias (Master y Anidadas), Footage separado por tipo (MP4 · MOV · WAV…) y Assets — sin mover ni un archivo del disco."
+                    },
+                    {
+                        "title":  "Consolidar: lo de Descargas se MUEVE",
+                        "text":  "Al dar “Analizar y preparar”, los medios que estén en tu carpeta de Descargas se mueven a la carpeta del proyecto. Descargas queda limpia y el proyecto se vuelve portable."
+                    },
+                    {
+                        "title":  "Lo demás solo se COPIA",
+                        "text":  "Los archivos que vivan en cualquier otra carpeta (plantillas, packs, bibliotecas) se copian en lugar de moverse: el original no se toca y tus plantillas siguen intactas para el siguiente proyecto."
+                    },
+                    {
+                        "title":  "Resultado: proyecto autocontenido",
+                        "text":  "Todo el material queda dentro de la carpeta del proyecto. Muévela a otro disco o PC y el proyecto abre completo, sin medios offline."
+                    }
+                ],
+    "creator":  {
+                    "handle":  "depsoniac",
+                    "name":  "Depson",
+                    "github":  "https://github.com/depsoniac",
+                    "avatar":  "https://github.com/depsoniac.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-Premiere-Hybrid-Organizer",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-Premiere-Hybrid-Organizer"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "premiere-hybrid-organizer-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "premiere-hybrid-organizer-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+

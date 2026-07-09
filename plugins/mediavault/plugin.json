@@ -1,0 +1,92 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "mediavault",
+    "slug":  "mediavault",
+    "name":  "MediaVault",
+    "author":  "Animateo",
+    "authorLocation":  "Colombia",
+    "category":  "adobe",
+    "type":  "adobe-cep",
+    "host":  [
+                 "After Effects",
+                 "Premiere Pro"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Biblioteca de medios centralizada para After Effects y Premiere Pro.",
+    "description":  "Vincula carpetas locales (SFX, música, B-roll, imágenes) y úsalas como biblioteca sin salir del programa: preview con forma de onda, importación inteligente y copia automática al proyecto.",
+    "installDirName":  "mediavault",
+    "tags":  [
+                 "After Effects",
+                 "Premiere Pro",
+                 "CEP",
+                 "Biblioteca"
+             ],
+    "links":  {
+                  "github":  "https://github.com/Animateoo",
+                  "instagram":  "https://www.instagram.com/animateoo/",
+                  "email":  "mateosistema@gmail.com",
+                  "support":  "mailto:mateosistema@gmail.com?subject=Soporte%20MediaVault"
+              },
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "credit":  {
+                   "by":  "Animateo",
+                   "location":  "Colombia",
+                   "github":  "https://github.com/Animateoo",
+                   "instagram":  "https://www.instagram.com/animateoo/",
+                   "email":  "mateosistema@gmail.com"
+               },
+    "details":  [
+                    {
+                        "title":  "Biblioteca integrada",
+                        "text":  "Indexa automáticamente audios, videos, imágenes y presets .ffx de las carpetas que vincules."
+                    },
+                    {
+                        "title":  "Preview e importación",
+                        "text":  "Previsualiza audio con forma de onda y video con scrubbing; importa con doble clic o arrastrando al timeline."
+                    },
+                    {
+                        "title":  "Copia automática al proyecto",
+                        "text":  "Duplica el media usado dentro de la carpeta de tu .aep/.prproj en subcarpetas ordenadas, evitando enlaces rotos y duplicados."
+                    },
+                    {
+                        "title":  "Hecho por Animateo (Colombia)",
+                        "text":  "Este complemento fue creado por Animateo, de Colombia. Si te sirvió, síguelo: GitHub github.com/Animateoo · Instagram @animateoo · Correo mateosistema@gmail.com"
+                    }
+                ],
+    "installMode":  "download-adobe-cep",
+    "cepSubdir":  "cep",
+    "cepDirName":  "MediaVault",
+    "creator":  {
+                    "handle":  "Animateoo",
+                    "name":  "Animateo",
+                    "github":  "https://github.com/Animateoo",
+                    "avatar":  "https://github.com/Animateoo.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-MediaVault",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-MediaVault"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "mediavault-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "mediavault-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+

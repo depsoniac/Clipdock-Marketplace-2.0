@@ -1,0 +1,3 @@
+Coloca aquí las capturas del complemento con estos nombres EXACTOS:
+- 01-panel.png
+- 02-resultado.png

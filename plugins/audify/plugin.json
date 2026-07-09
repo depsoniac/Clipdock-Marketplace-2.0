@@ -1,0 +1,86 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "audify",
+    "slug":  "audify",
+    "name":  "Audify",
+    "author":  "Animateo",
+    "authorLocation":  "Colombia",
+    "category":  "after-effects",
+    "type":  "after-effects-script",
+    "host":  [
+                 "After Effects"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Control rápido de volumen y ducking automático en After Effects.",
+    "description":  "Panel ScriptUI para After Effects que ayuda a controlar el volumen rápido y a hacer ducking automático (bajar la música cuando entra voz o diálogo).",
+    "installDirName":  "audify",
+    "tags":  [
+                 "After Effects",
+                 "Script",
+                 "Audio"
+             ],
+    "links":  {
+                  "github":  "https://github.com/Animateoo",
+                  "instagram":  "https://www.instagram.com/animateoo/",
+                  "email":  "mateosistema@gmail.com",
+                  "support":  "mailto:mateosistema@gmail.com?subject=Soporte%20Audify"
+              },
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "credit":  {
+                   "by":  "Animateo",
+                   "location":  "Colombia",
+                   "github":  "https://github.com/Animateoo",
+                   "instagram":  "https://www.instagram.com/animateoo/",
+                   "email":  "mateosistema@gmail.com"
+               },
+    "details":  [
+                    {
+                        "title":  "Control de volumen",
+                        "text":  "Ajusta el volumen de tus capas de audio de forma rápida desde el panel."
+                    },
+                    {
+                        "title":  "Ducking automático",
+                        "text":  "Baja automáticamente la música cuando entra voz o diálogo para mantener la claridad."
+                    },
+                    {
+                        "title":  "Hecho por Animateo (Colombia)",
+                        "text":  "Este complemento fue creado por Animateo, de Colombia. Si te sirvió, síguelo: GitHub github.com/Animateoo · Instagram @animateoo · Correo mateosistema@gmail.com"
+                    }
+                ],
+    "installMode":  "download-ae-script",
+    "aeScriptFile":  "Audify.jsx",
+    "installTarget":  "After Effects \u003e Scripts \u003e ScriptUI Panels",
+    "creator":  {
+                    "handle":  "Animateoo",
+                    "name":  "Animateo",
+                    "github":  "https://github.com/Animateoo",
+                    "avatar":  "https://github.com/Animateoo.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-Audify",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-Audify"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "audify-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "audify-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+

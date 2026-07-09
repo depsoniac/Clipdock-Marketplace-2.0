@@ -1,0 +1,91 @@
+﻿{
+    "schema":  "clipdock.plugin.v1",
+    "id":  "text-presets-ae",
+    "slug":  "text-presets-ae",
+    "name":  "TextPresets",
+    "author":  "Animateo",
+    "authorLocation":  "Colombia",
+    "category":  "adobe",
+    "type":  "adobe-cep",
+    "host":  [
+                 "After Effects"
+             ],
+    "version":  "1.0.0",
+    "minClipDockVersion":  "0.0.1",
+    "summary":  "Aplica y gestiona tu librería de presets de texto (.ffx) en un clic.",
+    "description":  "Extensión CEP para automatizar tu flujo tipográfico en After Effects: aplica animaciones de entrada y salida con timing automático, organiza favoritos, importa .ffx y hasta gestiona subtítulos .srt.",
+    "installDirName":  "text-presets-ae",
+    "tags":  [
+                 "After Effects",
+                 "CEP",
+                 "Tipografía",
+                 "Presets"
+             ],
+    "links":  {
+                  "github":  "https://github.com/Animateoo",
+                  "instagram":  "https://www.instagram.com/animateoo/",
+                  "email":  "mateosistema@gmail.com",
+                  "support":  "mailto:mateosistema@gmail.com?subject=Soporte%20TextPresets"
+              },
+    "images":  {
+                   "logo":  "logo.png",
+                   "banner":  "banner.png"
+               },
+    "credit":  {
+                   "by":  "Animateo",
+                   "location":  "Colombia",
+                   "github":  "https://github.com/Animateoo",
+                   "instagram":  "https://www.instagram.com/animateoo/",
+                   "email":  "mateosistema@gmail.com"
+               },
+    "details":  [
+                    {
+                        "title":  "Aplicación instantánea",
+                        "text":  "Aplica animaciones profesionales de entrada y salida con un solo botón, alineadas al InPoint y OutPoint de la capa."
+                    },
+                    {
+                        "title":  "Librería personalizable",
+                        "text":  "Organiza tus .ffx, impórtalos y guarda tus combinaciones como nuevos presets desde el panel."
+                    },
+                    {
+                        "title":  "Subtítulos SRT",
+                        "text":  "Importación nativa de archivos .srt para flujos de subtitulado veloces."
+                    },
+                    {
+                        "title":  "Hecho por Animateo (Colombia)",
+                        "text":  "Este complemento fue creado por Animateo, de Colombia. Si te sirvió, síguelo: GitHub github.com/Animateoo · Instagram @animateoo · Correo mateosistema@gmail.com"
+                    }
+                ],
+    "installMode":  "download-adobe-cep",
+    "cepSubdir":  "cep",
+    "cepDirName":  "TextPresets",
+    "creator":  {
+                    "handle":  "Animateoo",
+                    "name":  "Animateo",
+                    "github":  "https://github.com/Animateoo",
+                    "avatar":  "https://github.com/Animateoo.png"
+                },
+    "repo":  "https://github.com/depsonopsito/Clipdock-Text-Presets-AE",
+    "repository":  {
+                       "provider":  "github",
+                       "owner":  "depsonopsito",
+                       "repo":  "Clipdock-Text-Presets-AE"
+                   },
+    "release":  {
+                    "mode":  "github-latest-release",
+                    "assetPattern":  "text-presets-ae-*.zip",
+                    "includePrerelease":  false,
+                    "notes":  "ClipDock reads the latest GitHub release from this repo automatically."
+                },
+    "package":  {
+                    "format":  "zip",
+                    "assetPattern":  "text-presets-ae-*.zip",
+                    "source":  "github-latest-release"
+                },
+    "distribution":  {
+                         "catalog":  "Clipdock Marketplace 2.0",
+                         "updatePolicy":  "latest-release",
+                         "releaseRequired":  true
+                     }
+}
+
