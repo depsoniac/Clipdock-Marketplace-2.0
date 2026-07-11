@@ -1,7 +1,7 @@
 {
-  "schema": "clipdock.registry.resolved.v2",
+  "schema": "clipdock.registry.v2",
   "registryVersion": 2,
-  "updatedAt": "2026-07-09",
+  "updatedAt": "2026-07-11",
   "name": "ClipDock Marketplace 2.0",
   "discovery": {
     "type": "folder-index",
@@ -67,6 +67,7 @@
       "plugins": [
         "clipdock-remote",
         "clipdock-postits",
+        "clipdock-saves",
         "audify",
         "premiere-hybrid-organizer",
         "mediavault"
@@ -81,6 +82,7 @@
         "plugins": [
           "clipdock-remote",
           "clipdock-postits",
+          "clipdock-saves",
           "audify",
           "mediavault"
         ],
@@ -120,14 +122,15 @@
         "filter": "clipdock-utility",
         "actionLabel": "Abrir Docklets",
         "plugins": [
-          "clipdock-postits"
+          "clipdock-postits",
+          "clipdock-saves"
         ],
         "id": "clipdock-utility"
       }
     ]
   },
-  "registryMode": "resolved-plugin-registry",
-  "generatedAt": "2026-07-11T08:50:44.272Z",
+  "generatedAt": "2026-07-11T19:08:26.699Z",
+  "registryMode": "resolved-folder-index",
   "plugins": [
     {
       "schema": "clipdock.plugin.v1",
@@ -1141,6 +1144,79 @@
       },
       "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/",
       "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/plugin.json"
+    },
+    {
+      "schema": "clipdock.plugin.v1",
+      "id": "clipdock-saves",
+      "slug": "clipdock-saves",
+      "name": "ClipDock Saves",
+      "author": "Depson",
+      "category": "clipdock-utility",
+      "type": "clipdock-window",
+      "version": "0.1.0",
+      "minClipDockVersion": "1.6.3",
+      "summary": "Docklet para guardar publicaciones, videos, tutoriales, pins y paginas web como referencias visuales.",
+      "description": "Biblioteca visual de referencias para editores. Guarda cualquier URL con preview automatica cuando se pueda, fallback manual, colecciones, tags, notas, estados, busqueda, filtros y exportacion.",
+      "installMode": "clipdock-window",
+      "installDirName": "clipdock-saves",
+      "windowEntry": "index.html",
+      "window": {
+        "width": 1120,
+        "height": 760
+      },
+      "tags": [
+        "Docklet",
+        "ClipDock",
+        "Bookmarks",
+        "Referencias",
+        "Social",
+        "Moodboard"
+      ],
+      "images": {
+        "logo": "assets/logo.svg",
+        "banner": "assets/banner.svg"
+      },
+      "creator": {
+        "handle": "depsoniac",
+        "name": "Depson",
+        "github": "https://github.com/depsoniac",
+        "avatar": "https://github.com/depsoniac.png"
+      },
+      "permissions": {
+        "networkPreview": true,
+        "localStorage": true
+      },
+      "repo": "https://github.com/depsoniac/Clipdock-Marketplace-2.0",
+      "repository": {
+        "provider": "github",
+        "owner": "depsoniac",
+        "repo": "Clipdock-Marketplace-2.0"
+      },
+      "release": {
+        "mode": "marketplace-raw",
+        "assetPattern": "clipdock-saves-0.1.0.zip",
+        "assetName": "clipdock-saves-0.1.0.zip"
+      },
+      "package": {
+        "format": "zip",
+        "source": "marketplace-raw",
+        "file": "clipdock-saves-0.1.0.zip",
+        "downloadUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/packages/clipdock-saves-0.1.0.zip"
+      },
+      "fileName": "clipdock-saves-0.1.0.zip",
+      "downloadUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/packages/clipdock-saves-0.1.0.zip",
+      "releaseInfo": {
+        "provider": "github-raw",
+        "owner": "depsoniac",
+        "repo": "Clipdock-Marketplace-2.0",
+        "direct": true,
+        "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0/blob/main/packages/clipdock-saves-0.1.0.zip"
+      },
+      "links": {
+        "release": "https://github.com/depsoniac/Clipdock-Marketplace-2.0/blob/main/packages/clipdock-saves-0.1.0.zip"
+      },
+      "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/",
+      "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/plugin.json"
     }
   ]
 }
