@@ -1,17 +1,17 @@
-﻿{
-    "schema":  "clipdock.registry.index.v1",
-    "updatedAt":  "2026-07-09",
-    "folders":  [
-                    "audify",
-                    "aura-pro",
-                    "cache-pro",
-                    "graph-editor-ae",
-                    "mask-unlinker",
-                    "mediavault",
-                    "premiere-hybrid-organizer",
-                    "clipdock-remote-adobe",
-                    "shuttle",
-                    "text-presets-ae",
-                    "clipdock-postits"
-                ]
+{
+  "schema": "clipdock.registry.index.v1",
+  "updatedAt": "2026-07-09",
+  "folders": [
+    "audify",
+    "aura-pro",
+    "cache-pro",
+    "graph-editor-ae",
+    "mask-unlinker",
+    "mediavault",
+    "premiere-hybrid-organizer",
+    "clipdock-remote-adobe",
+    "shuttle",
+    "text-presets-ae",
+    "clipdock-postits"
+  ]
 }

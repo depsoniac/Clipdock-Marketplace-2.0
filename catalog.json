@@ -1,1 +1,129 @@
-{"schema":"clipdock.registry.v2","registryVersion":2,"updatedAt":"2026-07-09","name":"ClipDock Marketplace 2.0","discovery":{"type":"folder-index","pluginsFolderUrl":"https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/","folderIndexFile":"index.json","manifestFile":"plugin.json"},"ui":{"eyebrow":"STORE","title":"ClipDock Store","subtitle":"Extensiones, herramientas y flujos listos para instalar","searchPlaceholder":"Buscar apps, Adobe, scripts, utilidades...","filters":[{"id":"all","label":"Inicio"},{"id":"after-effects","label":"After Effects"},{"id":"premiere","label":"Premiere"},{"id":"clipdock-utility","label":"Docklets"},{"id":"installed","label":"Instalado"},{"id":"updates","label":"Updates"}],"buttons":{"refresh":{"title":"Actualizar tienda","ariaLabel":"Actualizar tienda"},"search":{"title":"Buscar en tienda"},"submit":{"hidden":false},"info":{"hidden":false}},"hero":{"eyebrow":"Destacado","title":"Destacado para empezar","subtitle":"Banners destacados de la tienda. Cambia con los puntos de la esquina.","pluginId":"clipdock-remote","action":{"label":"Instalar"},"secondaryLabel":"Ver ficha","plugins":["clipdock-remote","clipdock-postits","audify","premiere-hybrid-organizer","mediavault"]},"sections":[{"title":"Destacado para empezar","subtitle":"Lo principal para probar la tienda y ampliar ClipDock.","filter":"all","actionLabel":"Ver todo","plugins":["clipdock-remote","clipdock-postits","audify","mediavault"],"id":"featured"},{"title":"After Effects","subtitle":"Scripts y paneles para animacion, limpieza y control.","filter":"after-effects","actionLabel":"Abrir After Effects","plugins":["audify","graph-editor-ae","mask-unlinker","text-presets-ae","aura-pro","cache-pro"],"id":"after-effects"},{"title":"Premiere","subtitle":"Herramientas para organizar y mover contenido en Premiere.","filter":"premiere","actionLabel":"Abrir Premiere","plugins":["clipdock-remote","premiere-hybrid-organizer","mediavault","shuttle"],"id":"premiere"},{"title":"Docklets","subtitle":"Mini ventanas acoplables que expanden la barra lateral de ClipDock.","filter":"clipdock-utility","actionLabel":"Abrir Docklets","plugins":["clipdock-postits"],"id":"clipdock-utility"}]}}
+{
+  "schema": "clipdock.registry.v2",
+  "registryVersion": 2,
+  "updatedAt": "2026-07-09",
+  "name": "ClipDock Marketplace 2.0",
+  "discovery": {
+    "type": "folder-index",
+    "pluginsFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/",
+    "folderIndexFile": "index.json",
+    "manifestFile": "plugin.json"
+  },
+  "ui": {
+    "eyebrow": "STORE",
+    "title": "ClipDock Store",
+    "subtitle": "Extensiones, herramientas y flujos listos para instalar",
+    "searchPlaceholder": "Buscar apps, Adobe, scripts, utilidades...",
+    "filters": [
+      {
+        "id": "all",
+        "label": "Inicio"
+      },
+      {
+        "id": "after-effects",
+        "label": "After Effects"
+      },
+      {
+        "id": "premiere",
+        "label": "Premiere"
+      },
+      {
+        "id": "clipdock-utility",
+        "label": "Docklets"
+      },
+      {
+        "id": "installed",
+        "label": "Instalado"
+      },
+      {
+        "id": "updates",
+        "label": "Updates"
+      }
+    ],
+    "buttons": {
+      "refresh": {
+        "title": "Actualizar tienda",
+        "ariaLabel": "Actualizar tienda"
+      },
+      "search": {
+        "title": "Buscar en tienda"
+      },
+      "submit": {
+        "hidden": false
+      },
+      "info": {
+        "hidden": false
+      }
+    },
+    "hero": {
+      "eyebrow": "Destacado",
+      "title": "Destacado para empezar",
+      "subtitle": "Banners destacados de la tienda. Cambia con los puntos de la esquina.",
+      "pluginId": "clipdock-remote",
+      "action": {
+        "label": "Instalar"
+      },
+      "secondaryLabel": "Ver ficha",
+      "plugins": [
+        "clipdock-remote",
+        "clipdock-postits",
+        "audify",
+        "premiere-hybrid-organizer",
+        "mediavault"
+      ]
+    },
+    "sections": [
+      {
+        "title": "Destacado para empezar",
+        "subtitle": "Lo principal para probar la tienda y ampliar ClipDock.",
+        "filter": "all",
+        "actionLabel": "Ver todo",
+        "plugins": [
+          "clipdock-remote",
+          "clipdock-postits",
+          "audify",
+          "mediavault"
+        ],
+        "id": "featured"
+      },
+      {
+        "title": "After Effects",
+        "subtitle": "Scripts y paneles para animacion, limpieza y control.",
+        "filter": "after-effects",
+        "actionLabel": "Abrir After Effects",
+        "plugins": [
+          "audify",
+          "graph-editor-ae",
+          "mask-unlinker",
+          "text-presets-ae",
+          "aura-pro",
+          "cache-pro"
+        ],
+        "id": "after-effects"
+      },
+      {
+        "title": "Premiere",
+        "subtitle": "Herramientas para organizar y mover contenido en Premiere.",
+        "filter": "premiere",
+        "actionLabel": "Abrir Premiere",
+        "plugins": [
+          "clipdock-remote",
+          "premiere-hybrid-organizer",
+          "mediavault",
+          "shuttle"
+        ],
+        "id": "premiere"
+      },
+      {
+        "title": "Docklets",
+        "subtitle": "Mini ventanas acoplables que expanden la barra lateral de ClipDock.",
+        "filter": "clipdock-utility",
+        "actionLabel": "Abrir Docklets",
+        "plugins": [
+          "clipdock-postits"
+        ],
+        "id": "clipdock-utility"
+      }
+    ]
+  }
+}
