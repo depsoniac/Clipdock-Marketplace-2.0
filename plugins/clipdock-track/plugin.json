@@ -6,7 +6,6 @@
   "author": "Depson",
   "category": "clipdock-utility",
   "type": "clipdock-window",
-  "version": "0.1.0",
   "minClipDockVersion": "1.6.3",
   "summary": "Docklet para controlar videos, clientes, presupuestos y entregas mensuales.",
   "description": "Cabina visual para editores: mide videos del mes, ingresos, clientes, presupuestos, estados de edicion, pagos, fechas de entrega y carga de trabajo.",
@@ -45,26 +44,7 @@
     "repo": "Clidock-Track"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "clipdock-track-0.1.0.zip",
-    "assetName": "clipdock-track-0.1.0.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "clipdock-track-0.1.0.zip",
-    "source": "github-latest-release-direct",
-    "file": "clipdock-track-0.1.0.zip",
-    "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip"
-  },
-  "fileName": "clipdock-track-0.1.0.zip",
-  "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "Clidock-Track",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/Clidock-Track/releases/latest"
+    "mode": "github-latest-release"
   },
   "links": {
     "release": "https://github.com/depsonopsito/Clidock-Track/releases/latest"

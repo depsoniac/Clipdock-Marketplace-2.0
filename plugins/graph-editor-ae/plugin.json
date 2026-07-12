@@ -10,7 +10,6 @@
   "host": [
     "After Effects"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Editor visual de curvas Bézier y velocidad para After Effects.",
   "description": "Panel CEP para controlar influencia y velocidad de tus keyframes de forma gráfica, con presets de ease y aplicación en tiempo real sobre el Graph Editor nativo.",
@@ -72,25 +71,6 @@
     "repo": "GraphEditorAE"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "GraphEditorAE.zip",
-    "assetName": "GraphEditorAE.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "GraphEditorAE.zip",
-    "source": "github-latest-release-direct",
-    "file": "GraphEditorAE.zip",
-    "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/latest/download/GraphEditorAE.zip"
-  },
-  "fileName": "GraphEditorAE.zip",
-  "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/latest/download/GraphEditorAE.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "GraphEditorAE",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/GraphEditorAE/releases/latest"
+    "mode": "github-latest-release"
   }
 }

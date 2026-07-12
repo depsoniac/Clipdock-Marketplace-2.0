@@ -5,15 +5,15 @@
     "audify",
     "aura-pro",
     "cache-pro",
+    "clipdock-postits",
+    "clipdock-remote-adobe",
+    "clipdock-saves",
+    "clipdock-track",
     "graph-editor-ae",
     "mask-unlinker",
     "mediavault",
     "premiere-hybrid-organizer",
-    "clipdock-remote-adobe",
     "shuttle",
-    "text-presets-ae",
-    "clipdock-postits",
-    "clipdock-saves",
-    "clipdock-track"
+    "text-presets-ae"
   ]
 }

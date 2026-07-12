@@ -6,7 +6,6 @@
   "author": "Depson",
   "category": "clipdock-utility",
   "type": "clipdock-window",
-  "version": "0.1.0",
   "minClipDockVersion": "1.6.3",
   "summary": "Docklet de notas rapidas dentro de ClipDock.",
   "description": "Mini ventana acoplable de ClipDock para crear, mover y guardar notas tipo post-it.",
@@ -41,26 +40,7 @@
     "repo": "Clipdock-Postits"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "clipdock-postits-0.1.0.zip",
-    "assetName": "clipdock-postits-0.1.0.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "clipdock-postits-0.1.0.zip",
-    "source": "github-latest-release-direct",
-    "file": "clipdock-postits-0.1.0.zip",
-    "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest/download/clipdock-postits-0.1.0.zip"
-  },
-  "fileName": "clipdock-postits-0.1.0.zip",
-  "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest/download/clipdock-postits-0.1.0.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "Clipdock-Postits",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest"
+    "mode": "github-latest-release"
   },
   "links": {
     "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest"

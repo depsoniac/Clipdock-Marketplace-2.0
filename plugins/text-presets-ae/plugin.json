@@ -10,7 +10,6 @@
   "host": [
     "After Effects"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Aplica y gestiona tu librería de presets de texto (.ffx) en un clic.",
   "description": "Extensión CEP para automatizar tu flujo tipográfico en After Effects: aplica animaciones de entrada y salida con timing automático, organiza favoritos, importa .ffx y hasta gestiona subtítulos .srt.",
@@ -73,25 +72,6 @@
     "repo": "TextsPresetsAE"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "TextsPresetsAE.zip",
-    "assetName": "TextsPresetsAE.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "TextsPresetsAE.zip",
-    "source": "github-latest-release-direct",
-    "file": "TextsPresetsAE.zip",
-    "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest/download/TextsPresetsAE.zip"
-  },
-  "fileName": "TextsPresetsAE.zip",
-  "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest/download/TextsPresetsAE.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "TextsPresetsAE",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest"
+    "mode": "github-latest-release"
   }
 }

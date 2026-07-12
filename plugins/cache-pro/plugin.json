@@ -10,7 +10,6 @@
   "host": [
     "After Effects"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Multi-herramienta de rendimiento y limpieza de caché para After Effects.",
   "description": "Panel ScriptUI para optimizar el rendimiento de After Effects en tiempo real: purga caché de RAM y disco, limpia elementos no usados, controla efectos y guarda con versionado automático.",
@@ -72,25 +71,6 @@
     "repo": "Cache-Pro"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "Cache-Pro-main.zip",
-    "assetName": "Cache-Pro-main.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "Cache-Pro-main.zip",
-    "source": "github-latest-release-direct",
-    "file": "Cache-Pro-main.zip",
-    "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip"
-  },
-  "fileName": "Cache-Pro-main.zip",
-  "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "Cache-Pro",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/Cache-Pro/releases/latest"
+    "mode": "github-latest-release"
   }
 }

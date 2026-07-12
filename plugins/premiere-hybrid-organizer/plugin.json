@@ -10,7 +10,6 @@
     "Adobe CEP",
     "Premiere Pro"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Organiza bins y consolida medios en la carpeta del proyecto, directo en Premiere Pro.",
   "description": "Panel CEP híbrido: ordena automáticamente el panel de proyecto en bins y mueve o copia los medios usados a la carpeta del proyecto para dejarlo portable y limpio.",
@@ -67,25 +66,6 @@
     "repo": "premiere-hybrid-organizer"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "premiere-hybrid-organizer-1.0.0.zip",
-    "assetName": "premiere-hybrid-organizer-1.0.0.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "premiere-hybrid-organizer-1.0.0.zip",
-    "source": "github-latest-release-direct",
-    "file": "premiere-hybrid-organizer-1.0.0.zip",
-    "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest/download/premiere-hybrid-organizer-1.0.0.zip"
-  },
-  "fileName": "premiere-hybrid-organizer-1.0.0.zip",
-  "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest/download/premiere-hybrid-organizer-1.0.0.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "premiere-hybrid-organizer",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest"
+    "mode": "github-latest-release"
   }
 }

@@ -1,0 +1,59 @@
+name: Build catalog
+
+# El "robot" del marketplace. Regenera catalog-resolved.json y plugins/index.json
+# leyendo el ultimo release de cada plugin. Corre:
+#   - cuando subes/editas un plugin.json, el catalog.json o el script (push)
+#   - cada 6 horas (por si sacaste un release nuevo sin tocar el marketplace)
+#   - a mano desde la pestana Actions (workflow_dispatch)
+#   - cuando un repo de plugin avisa al publicar release (repository_dispatch)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**/plugin.json'
+      - 'catalog.json'
+      - 'scripts/build-catalog.mjs'
+      - '.github/workflows/build-catalog.yml'
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [plugin-released]
+
+# Evita que dos corridas se pisen.
+concurrency:
+  group: build-catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generar catalogo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/build-catalog.mjs
+
+      - name: Commitear cambios (si los hay)
+        run: |
+          git config user.name "clipdock-catalog-bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain catalog-resolved.json plugins/index.json)" ]; then
+            git add catalog-resolved.json plugins/index.json
+            git commit -m "chore(catalog): regenerar catalogo [skip ci]"
+            git push
+            echo "Catalogo actualizado y subido."
+          else
+            echo "Sin cambios en el catalogo."
+          fi

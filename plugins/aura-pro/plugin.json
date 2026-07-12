@@ -10,7 +10,6 @@
   "host": [
     "After Effects"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Gestor avanzado de paletas de color para After Effects.",
   "description": "Panel ScriptUI para organizar, extraer y aplicar colores: paletas múltiples por proyecto, aplicación de relleno/trazo con un clic, sincronización con la selección e importación/exportación en JSON.",
@@ -72,25 +71,6 @@
     "repo": "Aura-Pro-main"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "Aura-Pro-main.zip",
-    "assetName": "Aura-Pro-main.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "Aura-Pro-main.zip",
-    "source": "github-latest-release-direct",
-    "file": "Aura-Pro-main.zip",
-    "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest/download/Aura-Pro-main.zip"
-  },
-  "fileName": "Aura-Pro-main.zip",
-  "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest/download/Aura-Pro-main.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "Aura-Pro-main",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest"
+    "mode": "github-latest-release"
   }
 }

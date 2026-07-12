@@ -1,0 +1,31 @@
+# -----------------------------------------------------------------------------
+# PLANTILLA OPCIONAL - aviso instantaneo de release
+# -----------------------------------------------------------------------------
+# Copia este archivo a CADA repo de plugin como:
+#   .github/workflows/notify-marketplace.yml
+#
+# Hace que, al publicar un release, el repo del plugin le avise al marketplace
+# para que regenere el catalogo al instante (en vez de esperar a la corrida de
+# cada 6 horas).
+#
+# REQUISITO: crea un Personal Access Token (fine-grained) con permiso
+# "Contents: read/write" sobre el repo depsoniac/Clipdock-Marketplace-2.0 y
+# guardalo como secret llamado MARKETPLACE_DISPATCH_TOKEN en el repo del plugin.
+# -----------------------------------------------------------------------------
+name: Avisar al marketplace
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disparar rebuild del catalogo
+        run: |
+          curl -sSf -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.MARKETPLACE_DISPATCH_TOKEN }}" \
+            https://api.github.com/repos/depsoniac/Clipdock-Marketplace-2.0/dispatches \
+            -d '{"event_type":"plugin-released"}'

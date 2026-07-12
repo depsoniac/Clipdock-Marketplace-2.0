@@ -10,7 +10,6 @@
   "host": [
     "After Effects"
   ],
-  "version": "1.0.0",
   "minClipDockVersion": "0.0.1",
   "summary": "Desvincula máscaras y acelera el trabajo con mask paths en After Effects.",
   "description": "Panel ScriptUI para After Effects que ayuda a desvincular (unlink) máscaras y agilizar tareas comunes con mask paths, ideal para rotoscopia, motion graphics y ajustes finos de formas.",
@@ -68,25 +67,6 @@
     "repo": "Mask-Unliker"
   },
   "release": {
-    "mode": "github-latest-release",
-    "assetPattern": "Mask-Unliker.zip",
-    "assetName": "Mask-Unliker.zip"
-  },
-  "package": {
-    "format": "zip",
-    "assetPattern": "Mask-Unliker.zip",
-    "source": "github-latest-release-direct",
-    "file": "Mask-Unliker.zip",
-    "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip"
-  },
-  "fileName": "Mask-Unliker.zip",
-  "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip",
-  "releaseInfo": {
-    "provider": "github",
-    "owner": "depsonopsito",
-    "repo": "Mask-Unliker",
-    "tag": "",
-    "direct": true,
-    "url": "https://github.com/depsonopsito/Mask-Unliker/releases/latest"
+    "mode": "github-latest-release"
   }
 }
