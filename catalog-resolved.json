@@ -148,7 +148,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-12T20:37:50.382Z",
+  "generatedAt": "2026-07-12T20:49:06.202Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -178,7 +178,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Audify",
-        "release": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest"
+        "release": "https://github.com/depsonopsito/Audify-After-Effect/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -222,32 +222,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.236Z"
+        "resolvedAt": "2026-07-12T20:49:03.218Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest/download/Audify-After-Effect-main.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/download/1.0.0/Audify-After-Effect-main.zip",
       "fileName": "Audify-After-Effect-main.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "97d68d0e7e8f68c332c4d15786cb44d60117650b4fdd3d955493c4c834964ade",
+      "sizeLabel": "6.9 KB",
       "package": {
         "format": "zip",
         "file": "Audify-After-Effect-main.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest/download/Audify-After-Effect-main.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/download/1.0.0/Audify-After-Effect-main.zip",
+        "sha256": "97d68d0e7e8f68c332c4d15786cb44d60117650b4fdd3d955493c4c834964ade",
+        "sizeBytes": 7082,
+        "sizeLabel": "6.9 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T02:21:56Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Audify-After-Effect",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Audify-After-Effect/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T02:21:56Z"
       },
       "available": true,
       "releaseError": "",
@@ -281,7 +281,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Aura%20Pro",
-        "release": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest"
+        "release": "https://github.com/depsonopsito/Aura-Pro-main/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -329,32 +329,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.250Z"
+        "resolvedAt": "2026-07-12T20:49:03.501Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest/download/Aura-Pro-main.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/download/1.0.0/Aura-Pro-main.zip",
       "fileName": "Aura-Pro-main.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "91b1c67135dea099162b322fa8aab2a0821054c65cf6eee9915e613e29861591",
+      "sizeLabel": "10.8 KB",
       "package": {
         "format": "zip",
         "file": "Aura-Pro-main.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest/download/Aura-Pro-main.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Aura-Pro-main/releases/download/1.0.0/Aura-Pro-main.zip",
+        "sha256": "91b1c67135dea099162b322fa8aab2a0821054c65cf6eee9915e613e29861591",
+        "sizeBytes": 11095,
+        "sizeLabel": "10.8 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T02:37:26Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Aura-Pro-main",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Aura-Pro-main/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T02:37:26Z"
       },
       "available": true,
       "releaseError": "",
@@ -388,7 +388,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Cache%20Pro",
-        "release": "https://github.com/depsonopsito/Cache-Pro/releases/latest"
+        "release": "https://github.com/depsonopsito/Cache-Pro/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -436,32 +436,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.263Z"
+        "resolvedAt": "2026-07-12T20:49:03.729Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/download/1.0.0/Cache-Pro-main.zip",
       "fileName": "Cache-Pro-main.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "de92265d768129e15af2d40ecf551b38b289444c248cb80ffc8767cdcc6279e8",
+      "sizeLabel": "6.3 KB",
       "package": {
         "format": "zip",
         "file": "Cache-Pro-main.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/download/1.0.0/Cache-Pro-main.zip",
+        "sha256": "de92265d768129e15af2d40ecf551b38b289444c248cb80ffc8767cdcc6279e8",
+        "sizeBytes": 6400,
+        "sizeLabel": "6.3 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T02:41:40Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Cache-Pro",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Cache-Pro/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Cache-Pro/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T02:41:40Z"
       },
       "available": true,
       "releaseError": "",
@@ -477,7 +477,7 @@
       "category": "clipdock-utility",
       "type": "clipdock-window",
       "minClipDockVersion": "1.6.3",
-      "version": "0.1.0",
+      "version": "1.0.0",
       "summary": "Docklet de notas rapidas dentro de ClipDock.",
       "description": "Mini ventana acoplable de ClipDock para crear, mover y guardar notas tipo post-it.",
       "installMode": "clipdock-window",
@@ -512,35 +512,35 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.276Z"
+        "resolvedAt": "2026-07-12T20:49:03.926Z"
       },
       "links": {
-        "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest"
+        "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.0.0"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/assets/logo.svg",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/assets/banner.svg",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest/download/clipdock-postits-0.1.0.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/1.0.0/clipdock-postits-0.1.0.zip",
       "fileName": "clipdock-postits-0.1.0.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "55d42a562c977930b1983c7121be9209bcfeaa8fa101b112453eb45fedb60c0c",
+      "sizeLabel": "3.4 KB",
       "package": {
         "format": "zip",
         "file": "clipdock-postits-0.1.0.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest/download/clipdock-postits-0.1.0.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/1.0.0/clipdock-postits-0.1.0.zip",
+        "sha256": "55d42a562c977930b1983c7121be9209bcfeaa8fa101b112453eb45fedb60c0c",
+        "sizeBytes": 3486,
+        "sizeLabel": "3.4 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-10T05:09:00Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Clipdock-Postits",
-        "tag": "v0.1.0",
-        "url": "https://github.com/depsonopsito/Clipdock-Postits/releases/latest",
-        "publishedAt": ""
+        "tag": "v1.0.0",
+        "url": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.0.0",
+        "publishedAt": "2026-07-10T05:09:00Z"
       },
       "available": true,
       "releaseError": "",
@@ -559,7 +559,7 @@
         "Adobe CEP"
       ],
       "minClipDockVersion": "0.0.1",
-      "version": "1.1.1",
+      "version": "1.0.1",
       "summary": "Control remoto Adobe con dock compacto, importacion desde portapapeles y cola de ClipDock.",
       "description": "Extension CEP opcional para conectar ClipDock con Premiere y After Effects. Incluye ruteo separado, dock compacto e importacion rapida desde portapapeles y cola.",
       "installMode": "download-adobe-cep",
@@ -573,7 +573,7 @@
       "cepDirName": "ClipDock CEP",
       "links": {
         "support": "mailto:depsoncontacto@gmail.com?subject=Bug%20ClipDock%20Remote",
-        "release": "https://github.com/depsonopsito/Clipdock-Remote/releases/latest"
+        "release": "https://github.com/depsonopsito/Clipdock-Remote/releases/tag/1.0.1"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -593,32 +593,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.287Z"
+        "resolvedAt": "2026-07-12T20:49:04.173Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Remote/releases/latest/download/clipdock-remote-adobe-1.1.1.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Remote/releases/download/1.0.1/clipdock-remote-adobe-1.1.1.zip",
       "fileName": "clipdock-remote-adobe-1.1.1.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "8b857d0f9eee7dba09e0b052379abf216a316205af16473d1d2373bd24bd0e3c",
+      "sizeLabel": "48.6 KB",
       "package": {
         "format": "zip",
         "file": "clipdock-remote-adobe-1.1.1.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Remote/releases/latest/download/clipdock-remote-adobe-1.1.1.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Remote/releases/download/1.0.1/clipdock-remote-adobe-1.1.1.zip",
+        "sha256": "8b857d0f9eee7dba09e0b052379abf216a316205af16473d1d2373bd24bd0e3c",
+        "sizeBytes": 49772,
+        "sizeLabel": "48.6 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-09T23:23:28Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Clipdock-Remote",
-        "tag": "v1.1.1",
-        "url": "https://github.com/depsonopsito/Clipdock-Remote/releases/latest",
-        "publishedAt": ""
+        "tag": "v1.0.1",
+        "url": "https://github.com/depsonopsito/Clipdock-Remote/releases/tag/1.0.1",
+        "publishedAt": "2026-07-09T23:23:28Z"
       },
       "available": true,
       "releaseError": "",
@@ -674,35 +674,35 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.299Z"
+        "resolvedAt": "2026-07-12T20:49:04.420Z"
       },
       "links": {
-        "release": "https://github.com/depsonopsito/clipdock-saves/releases/latest"
+        "release": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/assets/logo.svg",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/assets/banner.svg",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.4.zip",
+      "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/download/0.1.4/clipdock-saves-0.1.4.zip",
       "fileName": "clipdock-saves-0.1.4.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "fdc5668e14e760c4c97c79b3b916506e0dfc2dc8be00a284c26fbd81efed1166",
+      "sizeLabel": "13.1 KB",
       "package": {
         "format": "zip",
         "file": "clipdock-saves-0.1.4.zip",
-        "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.4.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/download/0.1.4/clipdock-saves-0.1.4.zip",
+        "sha256": "fdc5668e14e760c4c97c79b3b916506e0dfc2dc8be00a284c26fbd81efed1166",
+        "sizeBytes": 13428,
+        "sizeLabel": "13.1 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-12T06:23:17Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "clipdock-saves",
         "tag": "v0.1.4",
-        "url": "https://github.com/depsonopsito/clipdock-saves/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4",
+        "publishedAt": "2026-07-12T06:23:17Z"
       },
       "available": true,
       "releaseError": "",
@@ -757,35 +757,35 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.310Z"
+        "resolvedAt": "2026-07-12T20:49:04.629Z"
       },
       "links": {
-        "release": "https://github.com/depsonopsito/Clidock-Track/releases/latest"
+        "release": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.1.0"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/assets/logo.svg",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/assets/banner.svg",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/download/0.1.0/clipdock-track-0.1.0.zip",
       "fileName": "clipdock-track-0.1.0.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "a4f47647d126d96df6e84d11d1e42078c448a790b917e7fbad1f4b0197464f74",
+      "sizeLabel": "10.8 KB",
       "package": {
         "format": "zip",
         "file": "clipdock-track-0.1.0.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/download/0.1.0/clipdock-track-0.1.0.zip",
+        "sha256": "a4f47647d126d96df6e84d11d1e42078c448a790b917e7fbad1f4b0197464f74",
+        "sizeBytes": 11053,
+        "sizeLabel": "10.8 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-12T08:26:05Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Clidock-Track",
         "tag": "v0.1.0",
-        "url": "https://github.com/depsonopsito/Clidock-Track/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.1.0",
+        "publishedAt": "2026-07-12T08:26:05Z"
       },
       "available": true,
       "releaseError": "",
@@ -819,7 +819,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20GraphEditor",
-        "release": "https://github.com/depsonopsito/GraphEditorAE/releases/latest"
+        "release": "https://github.com/depsonopsito/GraphEditorAE/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -867,32 +867,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.323Z"
+        "resolvedAt": "2026-07-12T20:49:04.941Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/graph-editor-ae/assets/logo.png",
       "bannerUrl": "",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/latest/download/GraphEditorAE.zip",
+      "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/download/1.0.0/GraphEditorAE.zip",
       "fileName": "GraphEditorAE.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "bec70e34a12a202d2db969b1f24e8aec459053b5cafa66fad8a1c04a8d92ac2e",
+      "sizeLabel": "42.7 KB",
       "package": {
         "format": "zip",
         "file": "GraphEditorAE.zip",
-        "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/latest/download/GraphEditorAE.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/GraphEditorAE/releases/download/1.0.0/GraphEditorAE.zip",
+        "sha256": "bec70e34a12a202d2db969b1f24e8aec459053b5cafa66fad8a1c04a8d92ac2e",
+        "sizeBytes": 43733,
+        "sizeLabel": "42.7 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:15:47Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "GraphEditorAE",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/GraphEditorAE/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/GraphEditorAE/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:15:47Z"
       },
       "available": true,
       "releaseError": "",
@@ -926,7 +926,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Mask%20Unlinker",
-        "release": "https://github.com/depsonopsito/Mask-Unliker/releases/latest"
+        "release": "https://github.com/depsonopsito/Mask-Unliker/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -970,32 +970,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.338Z"
+        "resolvedAt": "2026-07-12T20:49:05.219Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/download/1.0.0/Mask-Unliker.zip",
       "fileName": "Mask-Unliker.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "80dd70f629f811253ad30d01ed9f910be87e833f21bfe007611fb012ff0fa6de",
+      "sizeLabel": "7.2 KB",
       "package": {
         "format": "zip",
         "file": "Mask-Unliker.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/download/1.0.0/Mask-Unliker.zip",
+        "sha256": "80dd70f629f811253ad30d01ed9f910be87e833f21bfe007611fb012ff0fa6de",
+        "sizeBytes": 7371,
+        "sizeLabel": "7.2 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:18:25Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Mask-Unliker",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Mask-Unliker/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Mask-Unliker/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:18:25Z"
       },
       "available": true,
       "releaseError": "",
@@ -1031,7 +1031,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20MediaVault",
-        "release": "https://github.com/depsonopsito/MediaVault/releases/latest"
+        "release": "https://github.com/depsonopsito/MediaVault/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -1079,32 +1079,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.342Z"
+        "resolvedAt": "2026-07-12T20:49:05.470Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/MediaVault/releases/latest/download/MediaVault.zip",
+      "downloadUrl": "https://github.com/depsonopsito/MediaVault/releases/download/1.0.0/MediaVault.zip",
       "fileName": "MediaVault.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "8a4ab9e018722ef5a9a15a0ace20233f52748d3f73a44f2f9268b1b59b5550a7",
+      "sizeLabel": "59.3 KB",
       "package": {
         "format": "zip",
         "file": "MediaVault.zip",
-        "downloadUrl": "https://github.com/depsonopsito/MediaVault/releases/latest/download/MediaVault.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/MediaVault/releases/download/1.0.0/MediaVault.zip",
+        "sha256": "8a4ab9e018722ef5a9a15a0ace20233f52748d3f73a44f2f9268b1b59b5550a7",
+        "sizeBytes": 60718,
+        "sizeLabel": "59.3 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:24:05Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "MediaVault",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/MediaVault/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/MediaVault/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:24:05Z"
       },
       "available": true,
       "releaseError": "",
@@ -1143,7 +1143,7 @@
       },
       "links": {
         "support": "mailto:depsoncontacto@gmail.com?subject=Bug%20PR%20Hybrid%20Organizer",
-        "release": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest"
+        "release": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/tag/1.0.0"
       },
       "details": [
         {
@@ -1181,32 +1181,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.354Z"
+        "resolvedAt": "2026-07-12T20:49:05.690Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest/download/premiere-hybrid-organizer-1.0.0.zip",
+      "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/download/1.0.0/premiere-hybrid-organizer-1.0.0.zip",
       "fileName": "premiere-hybrid-organizer-1.0.0.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "e5baf4ee34da42dd6b339ee641eb720515e4602368f4a93d913995f3524d3ec3",
+      "sizeLabel": "52.4 KB",
       "package": {
         "format": "zip",
         "file": "premiere-hybrid-organizer-1.0.0.zip",
-        "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest/download/premiere-hybrid-organizer-1.0.0.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/download/1.0.0/premiere-hybrid-organizer-1.0.0.zip",
+        "sha256": "e5baf4ee34da42dd6b339ee641eb720515e4602368f4a93d913995f3524d3ec3",
+        "sizeBytes": 53634,
+        "sizeLabel": "52.4 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T04:50:04Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "premiere-hybrid-organizer",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/premiere-hybrid-organizer/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T04:50:04Z"
       },
       "available": true,
       "releaseError": "",
@@ -1242,7 +1242,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Shuttle",
-        "release": "https://github.com/depsonopsito/Shuttle-main/releases/latest"
+        "release": "https://github.com/depsonopsito/Shuttle-main/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -1290,32 +1290,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.366Z"
+        "resolvedAt": "2026-07-12T20:49:05.922Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/latest/download/Shuttle.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/download/1.0.0/Shuttle.zip",
       "fileName": "Shuttle.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "70b09e470482bf670694ebd30de99da8bafea6eac8e73be77ffd8b29e109982d",
+      "sizeLabel": "66.6 KB",
       "package": {
         "format": "zip",
         "file": "Shuttle.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/latest/download/Shuttle.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/download/1.0.0/Shuttle.zip",
+        "sha256": "70b09e470482bf670694ebd30de99da8bafea6eac8e73be77ffd8b29e109982d",
+        "sizeBytes": 68189,
+        "sizeLabel": "66.6 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:28:27Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Shuttle-main",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Shuttle-main/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Shuttle-main/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:28:27Z"
       },
       "available": true,
       "releaseError": "",
@@ -1350,7 +1350,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20TextPresets",
-        "release": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest"
+        "release": "https://github.com/depsonopsito/TextsPresetsAE/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -1398,32 +1398,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T20:37:50.378Z"
+        "resolvedAt": "2026-07-12T20:49:06.201Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest/download/TextsPresetsAE.zip",
+      "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/download/1.0.0/TextsPresetsAE.zip",
       "fileName": "TextsPresetsAE.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "17b641d2cb4cd66e275bc6ac4c6390e4368cabdcb8b71d0c0b00f9ba1a20c14f",
+      "sizeLabel": "4.6 MB",
       "package": {
         "format": "zip",
         "file": "TextsPresetsAE.zip",
-        "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest/download/TextsPresetsAE.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/TextsPresetsAE/releases/download/1.0.0/TextsPresetsAE.zip",
+        "sha256": "17b641d2cb4cd66e275bc6ac4c6390e4368cabdcb8b71d0c0b00f9ba1a20c14f",
+        "sizeBytes": 4775759,
+        "sizeLabel": "4.6 MB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:30:38Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "TextsPresetsAE",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/TextsPresetsAE/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/TextsPresetsAE/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:30:38Z"
       },
       "available": true,
       "releaseError": "",
