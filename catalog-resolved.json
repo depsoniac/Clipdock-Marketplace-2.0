@@ -129,7 +129,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-12T00:47:01.412Z",
+  "generatedAt": "2026-07-12T01:22:30.545Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -1153,7 +1153,7 @@
       "author": "Depson",
       "category": "clipdock-utility",
       "type": "clipdock-window",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "minClipDockVersion": "1.6.3",
       "summary": "Docklet para guardar publicaciones, videos, tutoriales, pins y paginas web como referencias visuales.",
       "description": "Biblioteca visual de referencias para editores. Guarda cualquier URL con preview automatica cuando se pueda, fallback manual, colecciones, tags, notas, estados, busqueda, filtros y exportacion.",
@@ -1194,18 +1194,18 @@
       },
       "release": {
         "mode": "github-latest-release",
-        "assetPattern": "clipdock-saves-0.1.1.zip",
-        "assetName": "clipdock-saves-0.1.1.zip"
+        "assetPattern": "clipdock-saves-0.1.2.zip",
+        "assetName": "clipdock-saves-0.1.2.zip"
       },
       "package": {
         "format": "zip",
-        "assetPattern": "clipdock-saves-0.1.1.zip",
+        "assetPattern": "clipdock-saves-0.1.2.zip",
         "source": "github-latest-release-direct",
-        "file": "clipdock-saves-0.1.1.zip",
-        "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.1.zip"
+        "file": "clipdock-saves-0.1.2.zip",
+        "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.2.zip"
       },
-      "fileName": "clipdock-saves-0.1.1.zip",
-      "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.1.zip",
+      "fileName": "clipdock-saves-0.1.2.zip",
+      "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.2.zip",
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
