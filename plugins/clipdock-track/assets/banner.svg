@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071019"/>
+      <stop offset=".45" stop-color="#0d1826"/>
+      <stop offset="1" stop-color="#101123"/>
+    </linearGradient>
+    <linearGradient id="acid" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#c9ff3d"/>
+      <stop offset=".55" stop-color="#61e8ff"/>
+      <stop offset="1" stop-color="#9a88ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg)"/>
+  <circle cx="1000" cy="80" r="260" fill="#c9ff3d" opacity=".08"/>
+  <circle cx="150" cy="460" r="260" fill="#61e8ff" opacity=".09"/>
+  <g transform="translate(80 76)">
+    <text x="0" y="0" fill="#c9ff3d" font-family="Inter,Segoe UI,Arial" font-size="26" font-weight="800">CLIPDOCK TRACK</text>
+    <text x="0" y="72" fill="#f4f7fb" font-family="Inter,Segoe UI,Arial" font-size="74" font-weight="900">Produccion mensual</text>
+    <text x="0" y="118" fill="#9daabc" font-family="Inter,Segoe UI,Arial" font-size="27" font-weight="600">Videos, clientes, presupuestos, pagos y entregas en una cabina visual.</text>
+  </g>
+  <g transform="translate(690 92)">
+    <rect x="0" y="0" width="390" height="300" rx="26" fill="#0d1420" stroke="#26364b"/>
+    <rect x="28" y="36" width="96" height="72" rx="16" fill="#c9ff3d"/>
+    <rect x="146" y="36" width="96" height="72" rx="16" fill="#172538" stroke="#33455f"/>
+    <rect x="264" y="36" width="96" height="72" rx="16" fill="#172538" stroke="#33455f"/>
+    <path d="M44 206h46l26-54 38 82 44-115 36 87h94" fill="none" stroke="url(#acid)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="34" y="248" width="112" height="18" rx="9" fill="#253246"/>
+    <rect x="162" y="248" width="76" height="18" rx="9" fill="#c9ff3d"/>
+    <rect x="254" y="248" width="94" height="18" rx="9" fill="#253246"/>
+  </g>
+</svg>

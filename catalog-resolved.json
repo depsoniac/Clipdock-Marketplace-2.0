@@ -1,7 +1,7 @@
 {
   "schema": "clipdock.registry.v2",
   "registryVersion": 2,
-  "updatedAt": "2026-07-11",
+  "updatedAt": "2026-07-12",
   "name": "ClipDock Marketplace 2.0",
   "discovery": {
     "type": "folder-index",
@@ -68,6 +68,7 @@
         "clipdock-remote",
         "clipdock-postits",
         "clipdock-saves",
+        "clipdock-track",
         "audify",
         "premiere-hybrid-organizer",
         "mediavault"
@@ -83,6 +84,7 @@
           "clipdock-remote",
           "clipdock-postits",
           "clipdock-saves",
+          "clipdock-track",
           "audify",
           "mediavault"
         ],
@@ -123,13 +125,14 @@
         "actionLabel": "Abrir Docklets",
         "plugins": [
           "clipdock-postits",
-          "clipdock-saves"
+          "clipdock-saves",
+          "clipdock-track"
         ],
         "id": "clipdock-utility"
       }
     ]
   },
-  "generatedAt": "2026-07-12T06:21:38.016Z",
+  "generatedAt": "2026-07-12T07:37:06.689Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -1219,6 +1222,80 @@
       },
       "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/",
       "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-saves/plugin.json"
+    },
+    {
+      "schema": "clipdock.plugin.v1",
+      "id": "clipdock-track",
+      "slug": "clipdock-track",
+      "name": "ClipDock Track",
+      "author": "Depson",
+      "category": "clipdock-utility",
+      "type": "clipdock-window",
+      "version": "0.1.0",
+      "minClipDockVersion": "1.6.3",
+      "summary": "Docklet para controlar videos, clientes, presupuestos y entregas mensuales.",
+      "description": "Cabina visual para editores: mide videos del mes, ingresos, clientes, presupuestos, estados de edicion, pagos, fechas de entrega y carga de trabajo.",
+      "installMode": "clipdock-window",
+      "installDirName": "clipdock-track",
+      "windowEntry": "index.html",
+      "window": {
+        "width": 1180,
+        "height": 780
+      },
+      "tags": [
+        "Docklet",
+        "ClipDock",
+        "Tracking",
+        "Clientes",
+        "Presupuestos",
+        "Editor"
+      ],
+      "images": {
+        "logo": "assets/logo.svg",
+        "banner": "assets/banner.svg"
+      },
+      "creator": {
+        "handle": "depsoniac",
+        "name": "Depson",
+        "github": "https://github.com/depsoniac",
+        "avatar": "https://github.com/depsoniac.png"
+      },
+      "permissions": {
+        "localStorage": true
+      },
+      "repo": "https://github.com/depsonopsito/Clidock-Track",
+      "repository": {
+        "provider": "github",
+        "owner": "depsonopsito",
+        "repo": "Clidock-Track"
+      },
+      "release": {
+        "mode": "github-latest-release",
+        "assetPattern": "clipdock-track-0.1.0.zip",
+        "assetName": "clipdock-track-0.1.0.zip"
+      },
+      "package": {
+        "format": "zip",
+        "assetPattern": "clipdock-track-0.1.0.zip",
+        "source": "github-latest-release-direct",
+        "file": "clipdock-track-0.1.0.zip",
+        "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip"
+      },
+      "fileName": "clipdock-track-0.1.0.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Clidock-Track/releases/latest/download/clipdock-track-0.1.0.zip",
+      "releaseInfo": {
+        "provider": "github",
+        "owner": "depsonopsito",
+        "repo": "Clidock-Track",
+        "tag": "",
+        "direct": true,
+        "url": "https://github.com/depsonopsito/Clidock-Track/releases/latest"
+      },
+      "links": {
+        "release": "https://github.com/depsonopsito/Clidock-Track/releases/latest"
+      },
+      "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/",
+      "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/plugin.json"
     }
   ]
 }

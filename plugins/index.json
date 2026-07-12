@@ -1,6 +1,6 @@
 {
   "schema": "clipdock.registry.index.v1",
-  "updatedAt": "2026-07-11",
+  "updatedAt": "2026-07-12",
   "folders": [
     "audify",
     "aura-pro",
@@ -13,6 +13,7 @@
     "shuttle",
     "text-presets-ae",
     "clipdock-postits",
-    "clipdock-saves"
+    "clipdock-saves",
+    "clipdock-track"
   ]
 }

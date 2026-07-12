@@ -1,7 +1,7 @@
 {
   "schema": "clipdock.registry.v2",
   "registryVersion": 2,
-  "updatedAt": "2026-07-11",
+  "updatedAt": "2026-07-12",
   "name": "ClipDock Marketplace 2.0",
   "discovery": {
     "type": "folder-index",
@@ -68,6 +68,7 @@
         "clipdock-remote",
         "clipdock-postits",
         "clipdock-saves",
+        "clipdock-track",
         "audify",
         "premiere-hybrid-organizer",
         "mediavault"
@@ -83,6 +84,7 @@
           "clipdock-remote",
           "clipdock-postits",
           "clipdock-saves",
+          "clipdock-track",
           "audify",
           "mediavault"
         ],
@@ -123,7 +125,8 @@
         "actionLabel": "Abrir Docklets",
         "plugins": [
           "clipdock-postits",
-          "clipdock-saves"
+          "clipdock-saves",
+          "clipdock-track"
         ],
         "id": "clipdock-utility"
       }
