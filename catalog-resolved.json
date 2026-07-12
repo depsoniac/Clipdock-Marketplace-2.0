@@ -148,7 +148,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-12T19:46:03.471Z",
+  "generatedAt": "2026-07-12T20:23:09.607Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -221,7 +221,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:45:58.577Z"
+        "resolvedAt": "2026-07-12T20:23:03.754Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/logo.png",
@@ -328,7 +328,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:45:59.001Z"
+        "resolvedAt": "2026-07-12T20:23:04.267Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/logo.png",
@@ -435,7 +435,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:45:59.396Z"
+        "resolvedAt": "2026-07-12T20:23:04.771Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/logo.png",
@@ -511,7 +511,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:45:59.809Z"
+        "resolvedAt": "2026-07-12T20:23:05.210Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.0.0"
@@ -592,7 +592,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:00.212Z"
+        "resolvedAt": "2026-07-12T20:23:05.672Z"
       },
       "version": "1.0.1",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/logo.png",
@@ -673,7 +673,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:00.621Z"
+        "resolvedAt": "2026-07-12T20:23:06.152Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4"
@@ -756,7 +756,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:00.976Z"
+        "resolvedAt": "2026-07-12T20:23:06.618Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.1.0"
@@ -866,7 +866,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:01.405Z"
+        "resolvedAt": "2026-07-12T20:23:07.105Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/graph-editor-ae/assets/logo.png",
@@ -969,7 +969,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:01.751Z"
+        "resolvedAt": "2026-07-12T20:23:07.578Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/logo.png",
@@ -1078,7 +1078,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:02.110Z"
+        "resolvedAt": "2026-07-12T20:23:08.055Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/logo.png",
@@ -1180,7 +1180,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:02.518Z"
+        "resolvedAt": "2026-07-12T20:23:08.491Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/logo.png",
@@ -1289,7 +1289,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:02.899Z"
+        "resolvedAt": "2026-07-12T20:23:08.979Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/logo.png",
@@ -1397,7 +1397,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-12T19:46:03.470Z"
+        "resolvedAt": "2026-07-12T20:23:09.606Z"
       },
       "version": "1.0.0",
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/logo.png",
