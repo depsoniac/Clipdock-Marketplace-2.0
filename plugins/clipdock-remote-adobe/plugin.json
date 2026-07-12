@@ -10,6 +10,7 @@
     "Adobe CEP"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.1.1",
   "summary": "Control remoto Adobe con dock compacto, importacion desde portapapeles y cola de ClipDock.",
   "description": "Extension CEP opcional para conectar ClipDock con Premiere y After Effects. Incluye ruteo separado, dock compacto e importacion rapida desde portapapeles y cola.",
   "installMode": "download-adobe-cep",
@@ -42,6 +43,7 @@
     "repo": "Clipdock-Remote"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "clipdock-remote-adobe-1.1.1.zip"
   }
 }

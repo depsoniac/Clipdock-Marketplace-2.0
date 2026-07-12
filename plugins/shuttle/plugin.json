@@ -12,6 +12,7 @@
     "Photoshop"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Envía y recibe contenido entre Illustrator y Photoshop con un clic.",
   "description": "Extensión CEP que acelera el flujo entre vector (Illustrator) y composición (Photoshop): Push, Pull y Switch manteniendo posición, tamaño y, cuando es posible, texto editable.",
   "installDirName": "shuttle",
@@ -73,6 +74,7 @@
     "repo": "Shuttle-main"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "Shuttle.zip"
   }
 }

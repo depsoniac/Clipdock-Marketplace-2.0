@@ -11,6 +11,7 @@
     "After Effects"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Aplica y gestiona tu librería de presets de texto (.ffx) en un clic.",
   "description": "Extensión CEP para automatizar tu flujo tipográfico en After Effects: aplica animaciones de entrada y salida con timing automático, organiza favoritos, importa .ffx y hasta gestiona subtítulos .srt.",
   "installDirName": "text-presets-ae",
@@ -72,6 +73,7 @@
     "repo": "TextsPresetsAE"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "TextsPresetsAE.zip"
   }
 }

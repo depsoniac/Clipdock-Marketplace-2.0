@@ -11,6 +11,7 @@
     "After Effects"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Gestor avanzado de paletas de color para After Effects.",
   "description": "Panel ScriptUI para organizar, extraer y aplicar colores: paletas múltiples por proyecto, aplicación de relleno/trazo con un clic, sincronización con la selección e importación/exportación en JSON.",
   "installDirName": "aura-pro",
@@ -71,6 +72,7 @@
     "repo": "Aura-Pro-main"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "Aura-Pro-main.zip"
   }
 }

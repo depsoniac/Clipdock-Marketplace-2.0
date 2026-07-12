@@ -7,11 +7,8 @@
 //   - catalog-resolved.json  -> lo que la app ClipDock lee primero (1 fetch)
 //   - plugins/index.json     -> indice de carpetas (autogenerado)
 //
-// Reglas:
-//   - Un plugin con "enabled": false se OMITE del catalogo.
-//   - No se editan los plugin.json fuente: todo lo volatil se deriva aqui.
-//   - Si un plugin no tiene release usable, igual se incluye marcado como
-//     "no disponible" para que la tienda lo muestre como "pendiente".
+// Resiliencia: si la API de GitHub no esta disponible, cae a la URL directa
+// del asset declarado (release.assetName) para que el instalador SIEMPRE sirva.
 //
 // Uso:  node scripts/build-catalog.mjs
 // Env:  GITHUB_TOKEN (opcional, sube el limite de la API de 60 a 5000/h)
@@ -35,17 +32,14 @@ const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const log = (...a) => console.log('[build-catalog]', ...a);
 const warn = (...a) => console.warn('[build-catalog] WARN', ...a);
 
-// ---------------------------------------------------------------------------
-// Utilidades
-// ---------------------------------------------------------------------------
 function readJson(file) {
-  const raw = fs.readFileSync(file, 'utf8').replace(/^﻿/, ''); // quita BOM
+  const raw = fs.readFileSync(file, 'utf8').replace(/^﻿/, '');
   return JSON.parse(raw);
 }
 
 function wildcardToRegExp(pattern) {
   const escaped = String(pattern).replace(/[.+^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*').replace(/\?/g, '.');
-  return new RegExp(`^${escaped}$`, 'i');
+  return new RegExp('^' + escaped + '$', 'i');
 }
 
 function parseRepository(plugin) {
@@ -59,16 +53,16 @@ function parseRepository(plugin) {
 
 async function githubApi(url) {
   const headers = { 'User-Agent': 'clipdock-marketplace-bot', 'Accept': 'application/vnd.github+json' };
-  if (GITHUB_TOKEN) headers.Authorization = `Bearer ${GITHUB_TOKEN}`;
+  if (GITHUB_TOKEN) headers.Authorization = 'Bearer ' + GITHUB_TOKEN;
   const res = await fetch(url, { headers });
   if (res.status === 404) return { notFound: true };
-  if (!res.ok) throw new Error(`GitHub API ${res.status} en ${url}`);
+  if (!res.ok) throw new Error('GitHub API ' + res.status + ' en ' + url);
   return res.json();
 }
 
 async function sha256AndSizeOf(url) {
   const res = await fetch(url, { headers: { 'User-Agent': 'clipdock-marketplace-bot' }, redirect: 'follow' });
-  if (!res.ok) throw new Error(`No se pudo bajar el asset (${res.status})`);
+  if (!res.ok) throw new Error('No se pudo bajar el asset (' + res.status + ')');
   const buf = Buffer.from(await res.arrayBuffer());
   return { sha256: crypto.createHash('sha256').update(buf).digest('hex'), sizeBytes: buf.length };
 }
@@ -76,95 +70,84 @@ async function sha256AndSizeOf(url) {
 function formatByteSize(bytes) {
   const n = Number(bytes) || 0;
   if (n <= 0) return '';
-  if (n < 1024) return `${n} B`;
-  if (n < 1024 * 1024) return `${(n / 1024).toFixed(1)} KB`;
-  return `${(n / (1024 * 1024)).toFixed(1)} MB`;
+  if (n < 1024) return n + ' B';
+  if (n < 1024 * 1024) return (n / 1024).toFixed(1) + ' KB';
+  return (n / (1024 * 1024)).toFixed(1) + ' MB';
 }
 
-// ---------------------------------------------------------------------------
-// Resolucion de release
-// ---------------------------------------------------------------------------
 async function resolveRelease(plugin) {
   const repoInfo = parseRepository(plugin);
   if (!repoInfo) return { available: false, releaseError: 'Sin repositorio GitHub definido.' };
-  const base = `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}`;
-
-  let release = await githubApi(`${base}/releases/latest`);
-  if (release.notFound) {
-    // Sin release "latest" (puede haber solo prereleases o ninguno): probamos la lista.
-    const list = await githubApi(`${base}/releases?per_page=5`);
-    if (Array.isArray(list) && list.length) release = list[0];
-    else return { available: false, releaseError: 'El repositorio no tiene releases publicados.', repoInfo };
-  }
-
-  const version = String(release.tag_name || release.name || plugin.version || '').replace(/^v/i, '') || (plugin.version || '0.0.0');
-  const assets = Array.isArray(release.assets) ? release.assets.filter(Boolean) : [];
-
-  // 1) Patron declarado (por si el repo trae varios zips). 2) Primer .zip. 3) source zipball.
-  let asset = null;
+  const base = 'https://api.github.com/repos/' + repoInfo.owner + '/' + repoInfo.repo;
+  const declaredAsset = (plugin.release && plugin.release.assetName) || (plugin.package && plugin.package.file) || plugin.fileName || '';
   const declaredPattern = (plugin.release && plugin.release.assetPattern) || (plugin.package && plugin.package.assetPattern) || '';
-  if (declaredPattern) asset = assets.find(a => wildcardToRegExp(declaredPattern).test(String(a.name || '')));
-  if (!asset) asset = assets.find(a => /\.zip$/i.test(String(a.name || '')));
-  if (!asset) asset = assets[0];
+  const manifestVersion = String(plugin.version || '').replace(/^v/i, '');
 
-  let downloadUrl = '';
-  let fileName = '';
-  let sizeBytes = 0;
-  let usedZipball = false;
+  const directUrl = declaredAsset && !/[*?]/.test(declaredAsset)
+    ? 'https://github.com/' + repoInfo.owner + '/' + repoInfo.repo + '/releases/latest/download/' + declaredAsset.split('/').map(encodeURIComponent).join('/')
+    : '';
+  const fallback = directUrl ? {
+    available: true, repoInfo, version: manifestVersion || '0.0.0',
+    downloadUrl: directUrl, fileName: declaredAsset, sha256: '', sizeBytes: 0, sizeLabel: '',
+    usedFallback: true, releaseUrl: 'https://github.com/' + repoInfo.owner + '/' + repoInfo.repo + '/releases/latest', publishedAt: ''
+  } : null;
 
-  if (asset) {
-    downloadUrl = asset.browser_download_url;
-    fileName = asset.name;
-    sizeBytes = asset.size || 0;
-  } else if (release.zipball_url) {
-    // Ultimo recurso: el source zip autogenerado (se envuelve en repo-<hash>/).
-    downloadUrl = release.zipball_url;
-    fileName = `${repoInfo.repo}-${version}.zip`;
-    usedZipball = true;
-    warn(`${plugin.id}: sin assets en el release, uso source zipball. Sube un ZIP como asset para mayor fiabilidad.`);
-  } else {
-    return { available: false, releaseError: 'El release no tiene assets ni source zipball.', repoInfo, version };
-  }
-
-  let sha256 = '';
   try {
-    const digest = await sha256AndSizeOf(downloadUrl);
-    sha256 = digest.sha256;
-    if (!sizeBytes) sizeBytes = digest.sizeBytes;
-  } catch (e) {
-    warn(`${plugin.id}: no pude calcular sha256 (${e.message}).`);
-  }
+    let release = await githubApi(base + '/releases/latest');
+    if (release.notFound) {
+      const list = await githubApi(base + '/releases?per_page=5');
+      if (Array.isArray(list) && list.length) release = list[0];
+      else return fallback || { available: false, releaseError: 'El repositorio no tiene releases publicados.', repoInfo };
+    }
 
-  return {
-    available: true,
-    repoInfo,
-    version,
-    downloadUrl,
-    fileName,
-    sha256,
-    sizeBytes,
-    sizeLabel: formatByteSize(sizeBytes),
-    usedZipball,
-    releaseUrl: release.html_url || `https://github.com/${repoInfo.owner}/${repoInfo.repo}/releases/latest`,
-    publishedAt: release.published_at || release.created_at || ''
-  };
+    const version = String(release.tag_name || release.name || manifestVersion || '').replace(/^v/i, '') || manifestVersion || '0.0.0';
+    const assets = Array.isArray(release.assets) ? release.assets.filter(Boolean) : [];
+
+    let asset = null;
+    if (declaredPattern) asset = assets.find(a => wildcardToRegExp(declaredPattern).test(String(a.name || '')));
+    if (!asset && declaredAsset) asset = assets.find(a => String(a.name || '').toLowerCase() === declaredAsset.toLowerCase());
+    if (!asset) asset = assets.find(a => /\.zip$/i.test(String(a.name || '')));
+    if (!asset) asset = assets[0];
+
+    let downloadUrl = '', fileName = '', sizeBytes = 0, usedZipball = false;
+    if (asset) {
+      downloadUrl = asset.browser_download_url; fileName = asset.name; sizeBytes = asset.size || 0;
+    } else if (directUrl) {
+      downloadUrl = directUrl; fileName = declaredAsset;
+    } else if (release.zipball_url) {
+      downloadUrl = release.zipball_url; fileName = repoInfo.repo + '-' + version + '.zip'; usedZipball = true;
+      warn(plugin.id + ': sin assets en el release, uso source zipball.');
+    } else {
+      return fallback || { available: false, releaseError: 'El release no tiene assets ni source zipball.', repoInfo, version };
+    }
+
+    let sha256 = '';
+    try { const d = await sha256AndSizeOf(downloadUrl); sha256 = d.sha256; if (!sizeBytes) sizeBytes = d.sizeBytes; }
+    catch (e) { warn(plugin.id + ': no pude calcular sha256 (' + e.message + ').'); }
+
+    return {
+      available: true, repoInfo, version, downloadUrl, fileName, sha256, sizeBytes,
+      sizeLabel: formatByteSize(sizeBytes), usedZipball,
+      releaseUrl: release.html_url || ('https://github.com/' + repoInfo.owner + '/' + repoInfo.repo + '/releases/latest'),
+      publishedAt: release.published_at || release.created_at || ''
+    };
+  } catch (e) {
+    if (fallback) { warn(plugin.id + ': API no disponible (' + e.message + '); uso URL directa de respaldo.'); return fallback; }
+    return { available: false, releaseError: e.message, repoInfo };
+  }
 }
 
-// ---------------------------------------------------------------------------
-// Normalizacion del plugin resuelto (forma que la app espera)
-// ---------------------------------------------------------------------------
 function resolveAssetUrl(value, folder) {
   const text = String(value || '').trim();
   if (!text) return '';
   if (/^(data:|https?:|file:)/i.test(text)) return text;
-  return `${RAW_BASE}/${folder}/${text.replace(/^\.?\//, '')}`;
+  return RAW_BASE + '/' + folder + '/' + text.replace(/^\.?\//, '');
 }
 
 function buildResolvedPlugin(plugin, folder, release) {
   const images = plugin.images && typeof plugin.images === 'object' ? plugin.images : {};
-  const folderUrl = `${RAW_BASE}/${folder}/`;
+  const folderUrl = RAW_BASE + '/' + folder + '/';
   const clean = { ...plugin };
-  // Quitamos lo volatil del fuente para que no compita con lo resuelto.
   delete clean.downloadUrl;
   delete clean.fileName;
   delete clean.package;
@@ -181,7 +164,6 @@ function buildResolvedPlugin(plugin, folder, release) {
     logoUrl: resolveAssetUrl(images.logo, folder),
     bannerUrl: resolveAssetUrl(images.banner, folder),
     screenshotUrls: Array.isArray(images.screenshots) ? images.screenshots.map(s => resolveAssetUrl(s, folder)).filter(Boolean) : [],
-    // release.mode = "resolved" -> la app NO vuelve a llamar a la API: usa esto directo.
     release: { mode: 'resolved', resolvedAt: new Date().toISOString() },
     downloadUrl: release.downloadUrl || '',
     fileName: release.fileName || '',
@@ -194,14 +176,14 @@ function buildResolvedPlugin(plugin, folder, release) {
       sha256: release.sha256 || '',
       sizeBytes: release.sizeBytes || 0,
       sizeLabel: release.sizeLabel || '',
-      source: release.usedZipball ? 'github-source-zipball' : 'github-release-asset',
+      source: release.usedFallback ? 'github-latest-download-direct' : (release.usedZipball ? 'github-source-zipball' : 'github-release-asset'),
       updatedAt: release.publishedAt || ''
     } : {},
     releaseInfo: release.repoInfo ? {
       provider: 'github',
       owner: release.repoInfo.owner,
       repo: release.repoInfo.repo,
-      tag: release.version ? `v${release.version}` : '',
+      tag: release.version ? 'v' + release.version : '',
       url: release.releaseUrl || '',
       publishedAt: release.publishedAt || ''
     } : {},
@@ -209,17 +191,14 @@ function buildResolvedPlugin(plugin, folder, release) {
     available: Boolean(release.available && release.downloadUrl),
     releaseError: release.releaseError || '',
     remotePluginFolderUrl: folderUrl,
-    remoteManifestUrl: `${folderUrl}plugin.json`
+    remoteManifestUrl: folderUrl + 'plugin.json'
   };
 }
 
-// ---------------------------------------------------------------------------
-// Secciones automaticas por host / tipo
-// ---------------------------------------------------------------------------
 function hostSet(plugin) {
   return new Set([...(plugin.host || []), ...(plugin.tags || [])].map(s => String(s).toLowerCase()));
 }
-function isAfterEffects(plugin) { const h = hostSet(plugin); return h.has('after effects'); }
+function isAfterEffects(plugin) { return hostSet(plugin).has('after effects'); }
 function isPremiere(plugin) { const h = hostSet(plugin); return h.has('premiere pro') || h.has('premiere'); }
 function isPsAi(plugin) { const h = hostSet(plugin); return h.has('illustrator') || h.has('photoshop'); }
 function isDocklet(plugin) { return plugin.type === 'clipdock-window' || plugin.installMode === 'clipdock-window'; }
@@ -240,15 +219,12 @@ function buildSections(baseUi, plugins) {
   return sections.filter(s => s.plugins.length);
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
 async function main() {
   const config = readJson(CONFIG_FILE);
   const entries = fs.readdirSync(PLUGINS_DIR, { withFileTypes: true })
     .filter(e => e.isDirectory())
     .map(e => e.name)
-    .filter(name => !name.startsWith('_') && !name.startsWith('.')) // _template, .git, etc.
+    .filter(name => !name.startsWith('_') && !name.startsWith('.'))
     .sort();
 
   const folders = [];
@@ -259,28 +235,26 @@ async function main() {
     if (!fs.existsSync(manifestPath)) continue;
     let plugin;
     try { plugin = readJson(manifestPath); }
-    catch (e) { warn(`${folder}: plugin.json invalido (${e.message}). Omitido.`); continue; }
+    catch (e) { warn(folder + ': plugin.json invalido (' + e.message + '). Omitido.'); continue; }
 
-    if (plugin.enabled === false) { log(`${folder}: enabled:false -> omitido.`); continue; }
+    if (plugin.enabled === false) { log(folder + ': enabled:false -> omitido.'); continue; }
 
     folders.push(folder);
-    log(`Resolviendo ${plugin.id || folder}...`);
+    log('Resolviendo ' + (plugin.id || folder) + '...');
     let release;
     try { release = await resolveRelease(plugin); }
-    catch (e) { warn(`${folder}: fallo al resolver release (${e.message}).`); release = { available: false, releaseError: e.message }; }
+    catch (e) { warn(folder + ': fallo al resolver release (' + e.message + ').'); release = { available: false, releaseError: e.message }; }
 
     const entry = buildResolvedPlugin(plugin, folder, release);
     resolved.push(entry);
-    if (entry.available) log(`  -> v${entry.version}  ${entry.fileName}  ${entry.sizeLabel}  sha256:${entry.sha256.slice(0, 12)}...`);
-    else warn(`  -> NO disponible: ${entry.releaseError}`);
+    if (entry.available) log('  -> v' + entry.version + '  ' + entry.fileName + '  ' + (entry.sizeLabel || '') + '  ' + (entry.sha256 ? 'sha256:' + entry.sha256.slice(0, 12) + '...' : '(sin sha, respaldo directo)'));
+    else warn('  -> NO disponible: ' + entry.releaseError);
   }
 
-  // Indice de carpetas (autogenerado)
   const today = new Date().toISOString().slice(0, 10);
   const indexOut = { schema: 'clipdock.registry.index.v1', updatedAt: today, folders };
   fs.writeFileSync(INDEX_FILE, JSON.stringify(indexOut, null, 2) + '\n', 'utf8');
 
-  // Catalogo resuelto (lo que lee la app)
   const ui = { ...(config.ui || {}) };
   ui.sections = buildSections(config.ui || {}, resolved);
   const resolvedOut = {
@@ -297,12 +271,7 @@ async function main() {
   fs.writeFileSync(RESOLVED_FILE, JSON.stringify(resolvedOut, null, 2) + '\n', 'utf8');
 
   const okCount = resolved.filter(p => p.available).length;
-  log(`Listo: ${resolved.length} plugins (${okCount} disponibles), ${resolved.length - okCount} pendientes.`);
-  const broken = resolved.filter(p => !p.available);
-  if (broken.length) {
-    warn('Plugins sin descarga usable:');
-    broken.forEach(p => warn(`  - ${p.id}: ${p.releaseError}`));
-  }
+  log('Listo: ' + resolved.length + ' plugins (' + okCount + ' disponibles), ' + (resolved.length - okCount) + ' pendientes.');
 }
 
 main().catch(err => { console.error('[build-catalog] ERROR FATAL:', err); process.exit(1); });

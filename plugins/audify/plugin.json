@@ -11,6 +11,7 @@
     "After Effects"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Control rápido de volumen y ducking automático en After Effects.",
   "description": "Panel ScriptUI para After Effects que ayuda a controlar el volumen rápido y a hacer ducking automático (bajar la música cuando entra voz o diálogo).",
   "installDirName": "audify",
@@ -67,6 +68,7 @@
     "repo": "Audify-After-Effect"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "Audify-After-Effect-main.zip"
   }
 }

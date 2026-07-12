@@ -12,6 +12,7 @@
     "Premiere Pro"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Biblioteca de medios centralizada para After Effects y Premiere Pro.",
   "description": "Vincula carpetas locales (SFX, música, B-roll, imágenes) y úsalas como biblioteca sin salir del programa: preview con forma de onda, importación inteligente y copia automática al proyecto.",
   "installDirName": "mediavault",
@@ -73,6 +74,7 @@
     "repo": "MediaVault"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "MediaVault.zip"
   }
 }

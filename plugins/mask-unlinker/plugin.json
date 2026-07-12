@@ -11,6 +11,7 @@
     "After Effects"
   ],
   "minClipDockVersion": "0.0.1",
+  "version": "1.0.0",
   "summary": "Desvincula máscaras y acelera el trabajo con mask paths en After Effects.",
   "description": "Panel ScriptUI para After Effects que ayuda a desvincular (unlink) máscaras y agilizar tareas comunes con mask paths, ideal para rotoscopia, motion graphics y ajustes finos de formas.",
   "installDirName": "mask-unlinker",
@@ -67,6 +68,7 @@
     "repo": "Mask-Unliker"
   },
   "release": {
-    "mode": "github-latest-release"
+    "mode": "github-latest-release",
+    "assetName": "Mask-Unliker.zip"
   }
 }
