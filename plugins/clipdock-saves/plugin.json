@@ -39,33 +39,35 @@
     "networkPreview": true,
     "localStorage": true
   },
-  "repo": "https://github.com/depsoniac/Clipdock-Marketplace-2.0",
+  "repo": "https://github.com/depsonopsito/clipdock-saves",
   "repository": {
     "provider": "github",
-    "owner": "depsoniac",
-    "repo": "Clipdock-Marketplace-2.0"
+    "owner": "depsonopsito",
+    "repo": "clipdock-saves"
   },
   "release": {
-    "mode": "marketplace-raw",
+    "mode": "github-latest-release",
     "assetPattern": "clipdock-saves-0.1.0.zip",
     "assetName": "clipdock-saves-0.1.0.zip"
   },
   "package": {
     "format": "zip",
-    "source": "marketplace-raw",
+    "assetPattern": "clipdock-saves-0.1.0.zip",
+    "source": "github-latest-release-direct",
     "file": "clipdock-saves-0.1.0.zip",
-    "downloadUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/packages/clipdock-saves-0.1.0.zip"
+    "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.0.zip"
   },
   "fileName": "clipdock-saves-0.1.0.zip",
-  "downloadUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/packages/clipdock-saves-0.1.0.zip",
+  "downloadUrl": "https://github.com/depsonopsito/clipdock-saves/releases/latest/download/clipdock-saves-0.1.0.zip",
   "releaseInfo": {
-    "provider": "github-raw",
-    "owner": "depsoniac",
-    "repo": "Clipdock-Marketplace-2.0",
+    "provider": "github",
+    "owner": "depsonopsito",
+    "repo": "clipdock-saves",
+    "tag": "",
     "direct": true,
-    "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0/blob/main/packages/clipdock-saves-0.1.0.zip"
+    "url": "https://github.com/depsonopsito/clipdock-saves/releases/latest"
   },
   "links": {
-    "release": "https://github.com/depsoniac/Clipdock-Marketplace-2.0/blob/main/packages/clipdock-saves-0.1.0.zip"
+    "release": "https://github.com/depsonopsito/clipdock-saves/releases/latest"
   }
 }
