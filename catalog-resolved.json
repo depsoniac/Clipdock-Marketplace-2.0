@@ -148,7 +148,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-13T08:38:34.214Z",
+  "generatedAt": "2026-07-13T09:23:49.138Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -222,7 +222,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:28.063Z"
+        "resolvedAt": "2026-07-13T09:23:45.744Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/banner.png",
@@ -329,7 +329,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:28.529Z"
+        "resolvedAt": "2026-07-13T09:23:46.037Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/banner.png",
@@ -436,7 +436,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:28.984Z"
+        "resolvedAt": "2026-07-13T09:23:46.357Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/banner.png",
@@ -514,7 +514,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:29.620Z"
+        "resolvedAt": "2026-07-13T09:23:46.656Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/0.2.0"
@@ -597,7 +597,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:30.101Z"
+        "resolvedAt": "2026-07-13T09:23:46.940Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/banner.png",
@@ -680,7 +680,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:30.572Z"
+        "resolvedAt": "2026-07-13T09:23:47.206Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4"
@@ -765,7 +765,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:31.055Z"
+        "resolvedAt": "2026-07-13T09:23:47.468Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.2.0"
@@ -875,7 +875,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:31.594Z"
+        "resolvedAt": "2026-07-13T09:23:47.740Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/graph-editor-ae/assets/logo.png",
       "bannerUrl": "",
@@ -978,7 +978,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:32.079Z"
+        "resolvedAt": "2026-07-13T09:23:47.962Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/banner.png",
@@ -1087,7 +1087,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:32.728Z"
+        "resolvedAt": "2026-07-13T09:23:48.250Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/banner.png",
@@ -1191,7 +1191,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:33.241Z"
+        "resolvedAt": "2026-07-13T09:23:48.562Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/banner.png",
@@ -1300,7 +1300,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:33.704Z"
+        "resolvedAt": "2026-07-13T09:23:48.845Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/banner.png",
@@ -1408,7 +1408,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-13T08:38:34.213Z"
+        "resolvedAt": "2026-07-13T09:23:49.136Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/banner.png",
