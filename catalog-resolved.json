@@ -148,7 +148,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-15T13:40:48.300Z",
+  "generatedAt": "2026-07-15T19:08:30.826Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -222,7 +222,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:43.402Z"
+        "resolvedAt": "2026-07-15T19:08:24.119Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/banner.png",
@@ -329,7 +329,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:43.771Z"
+        "resolvedAt": "2026-07-15T19:08:24.633Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/banner.png",
@@ -436,7 +436,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:44.173Z"
+        "resolvedAt": "2026-07-15T19:08:25.175Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/banner.png",
@@ -477,9 +477,9 @@
       "category": "clipdock-utility",
       "type": "clipdock-window",
       "minClipDockVersion": "1.6.3",
-      "version": "0.2.0",
-      "summary": "Docklet de notas rapidas dentro de ClipDock.",
-      "description": "Mini ventana acoplable de ClipDock para crear, mover y guardar notas tipo post-it.",
+      "version": "1.2.0",
+      "summary": "Pizarron para notas post-it y dibujo a mano dentro de ClipDock.",
+      "description": "Pizarron acoplable de ClipDock: crea, mueve, colorea y redimensiona notas tipo post-it, y dibuja a mano alzada con lapiz, marcador y borrador. Fondo de puntos, exporta el pizarron como imagen o respaldo JSON, y todo se guarda solo.",
       "installMode": "clipdock-window",
       "installDirName": "clipdock-postits",
       "windowEntry": "index.html",
@@ -514,35 +514,35 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:44.552Z"
+        "resolvedAt": "2026-07-15T19:08:25.661Z"
       },
       "links": {
-        "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/0.2.0"
+        "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.2.0"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/assets/logo.svg",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/assets/banner.svg",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/0.2.0/clipdock-postits-0.2.0.zip",
-      "fileName": "clipdock-postits-0.2.0.zip",
-      "sha256": "43ff73e11161ddd32768a16a27ab2dcd803e8503d1876663d85d97310b806c81",
-      "sizeLabel": "9.4 KB",
+      "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/1.2.0/clipdock-postits-0.2.0-updated.zip",
+      "fileName": "clipdock-postits-0.2.0-updated.zip",
+      "sha256": "37c7b5fd5e4b86bc04925a1eaab515e48b2dae57f412d6e85139abf8dad7ae34",
+      "sizeLabel": "10.3 KB",
       "package": {
         "format": "zip",
-        "file": "clipdock-postits-0.2.0.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/0.2.0/clipdock-postits-0.2.0.zip",
-        "sha256": "43ff73e11161ddd32768a16a27ab2dcd803e8503d1876663d85d97310b806c81",
-        "sizeBytes": 9667,
-        "sizeLabel": "9.4 KB",
+        "file": "clipdock-postits-0.2.0-updated.zip",
+        "downloadUrl": "https://github.com/depsonopsito/Clipdock-Postits/releases/download/1.2.0/clipdock-postits-0.2.0-updated.zip",
+        "sha256": "37c7b5fd5e4b86bc04925a1eaab515e48b2dae57f412d6e85139abf8dad7ae34",
+        "sizeBytes": 10529,
+        "sizeLabel": "10.3 KB",
         "source": "github-release-asset",
-        "updatedAt": "2026-07-13T08:36:47Z"
+        "updatedAt": "2026-07-15T18:53:15Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Clipdock-Postits",
-        "tag": "v0.2.0",
-        "url": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/0.2.0",
-        "publishedAt": "2026-07-13T08:36:47Z"
+        "tag": "v1.2.0",
+        "url": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.2.0",
+        "publishedAt": "2026-07-15T18:53:15Z"
       },
       "available": true,
       "releaseError": "",
@@ -597,7 +597,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:45.022Z"
+        "resolvedAt": "2026-07-15T19:08:26.307Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/banner.png",
@@ -680,7 +680,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:45.449Z"
+        "resolvedAt": "2026-07-15T19:08:26.786Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4"
@@ -765,7 +765,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:45.846Z"
+        "resolvedAt": "2026-07-15T19:08:27.376Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.2.0"
@@ -875,7 +875,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:46.202Z"
+        "resolvedAt": "2026-07-15T19:08:27.906Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/graph-editor-ae/assets/logo.png",
       "bannerUrl": "",
@@ -978,7 +978,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:46.586Z"
+        "resolvedAt": "2026-07-15T19:08:28.463Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/banner.png",
@@ -1087,7 +1087,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:46.969Z"
+        "resolvedAt": "2026-07-15T19:08:28.936Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/banner.png",
@@ -1191,7 +1191,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:47.452Z"
+        "resolvedAt": "2026-07-15T19:08:29.451Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/banner.png",
@@ -1300,7 +1300,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:47.854Z"
+        "resolvedAt": "2026-07-15T19:08:29.897Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/banner.png",
@@ -1408,7 +1408,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-15T13:40:48.299Z"
+        "resolvedAt": "2026-07-15T19:08:30.825Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/banner.png",
