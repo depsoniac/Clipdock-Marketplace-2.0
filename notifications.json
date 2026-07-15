@@ -10,6 +10,10 @@
       "targetId": "clipdock",
       "title": "ClipDock v2.0 disponible",
       "message": "La versión 2.0 incorpora el nuevo centro de notificaciones, actualizaciones automáticas de la tienda, respaldo de doclets y mejoras generales de estabilidad.",
+      "image": {
+        "url": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/assets/notifications/release-v2-hero.svg",
+        "alt": "Arte de lanzamiento de ClipDock V2 con líneas de tiempo creativas."
+      },
       "changelog": [
         "Nuevo centro de notificaciones con historial local y previsualización.",
         "La tienda se sincroniza al arrancar y una vez al día.",

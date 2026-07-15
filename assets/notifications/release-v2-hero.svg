@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">ClipDock V2</title>
+  <desc id="desc">Arte abstracto de lanzamiento con el texto V2, líneas de tiempo y paneles creativos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0a1018"/><stop offset=".52" stop-color="#151d29"/><stop offset="1" stop-color="#10131c"/></linearGradient>
+    <radialGradient id="limeGlow" cx=".76" cy=".46" r=".56"><stop stop-color="#c9ff3d" stop-opacity=".32"/><stop offset=".44" stop-color="#c9ff3d" stop-opacity=".08"/><stop offset="1" stop-color="#c9ff3d" stop-opacity="0"/></radialGradient>
+    <linearGradient id="lime" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efffb0"/><stop offset=".42" stop-color="#c9ff3d"/><stop offset="1" stop-color="#7cad16"/></linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#bbaeff"/><stop offset="1" stop-color="#6a54cf"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="34"/></filter>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#b8c7d7" stroke-opacity=".055"/></pattern>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#grid)"/>
+  <rect width="1200" height="520" rx="28" fill="url(#limeGlow)"/>
+  <path d="M-80 408C154 306 234 450 416 362S690 168 850 232s238 94 430-12" fill="none" stroke="#c9ff3d" stroke-opacity=".13" stroke-width="2"/>
+  <path d="M-80 432C154 330 234 474 416 386S690 192 850 256s238 94 430-12" fill="none" stroke="#9a88ff" stroke-opacity=".18" stroke-width="1"/>
+  <g transform="translate(698 72) rotate(-8)">
+    <rect width="370" height="252" rx="22" fill="#101720" fill-opacity=".76" stroke="#c9ff3d" stroke-opacity=".35"/>
+    <rect x="22" y="22" width="326" height="10" rx="5" fill="#c9ff3d" fill-opacity=".72"/>
+    <rect x="22" y="54" width="188" height="8" rx="4" fill="#8e9aaa" fill-opacity=".32"/>
+    <rect x="22" y="82" width="280" height="54" rx="12" fill="#202b36"/>
+    <path d="M42 116h54l18-21 26 30 30-37 38 31 25-17 36 19" fill="none" stroke="url(#lime)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="22" y="160" width="142" height="52" rx="12" fill="#c9ff3d" fill-opacity=".14"/>
+    <rect x="178" y="160" width="124" height="52" rx="12" fill="#9a88ff" fill-opacity=".16"/>
+    <circle cx="326" cy="27" r="5" fill="#9a88ff"/>
+  </g>
+  <g transform="translate(756 276) rotate(9)" opacity=".78">
+    <rect width="310" height="134" rx="18" fill="#121a23" fill-opacity=".9" stroke="#9a88ff" stroke-opacity=".4"/>
+    <path d="M24 82h74l18-28 29 42 28-54 33 40 31-22 48 28" fill="none" stroke="url(#violet)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="24" y="22" width="100" height="8" rx="4" fill="#9a88ff" fill-opacity=".7"/>
+    <rect x="24" y="104" width="158" height="5" rx="2.5" fill="#98a5b5" fill-opacity=".28"/>
+  </g>
+  <g filter="url(#glow)">
+    <text x="190" y="324" fill="url(#lime)" font-family="Arial,Segoe UI,sans-serif" font-size="206" font-weight="900" letter-spacing="-18">V2</text>
+  </g>
+  <text x="207" y="371" fill="#eaf5d0" fill-opacity=".82" font-family="Arial,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing="7">THE NEXT WORKSPACE</text>
+  <g opacity=".9">
+    <circle cx="1080" cy="88" r="7" fill="#c9ff3d"/><circle cx="1108" cy="88" r="5" fill="#9a88ff"/><circle cx="1130" cy="88" r="3" fill="#dce4ef"/>
+    <path d="M72 84h178M72 104h110M72 124h148" stroke="#a6b5c5" stroke-opacity=".22" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="518" rx="27" fill="none" stroke="#c9ff3d" stroke-opacity=".18"/>
+</svg>
