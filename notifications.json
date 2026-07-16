@@ -3,52 +3,31 @@
   "updatedAt": "2026-07-15T00:00:00.000Z",
   "notifications": [
     {
-      "id": "example-release-clipdock-v2",
-      "revision": "2.0.0-example",
-      "type": "release",
-      "category": "release",
-      "targetId": "clipdock",
-      "title": "ClipDock v2.0 disponible",
-      "message": "La versión 2.0 incorpora el nuevo centro de notificaciones, actualizaciones automáticas de la tienda, respaldo de doclets y mejoras generales de estabilidad.",
-      "image": {
-        "url": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/assets/notifications/release-v2-hero.svg",
-        "alt": "Arte de lanzamiento de ClipDock V2 con líneas de tiempo creativas."
-      },
+      "id": "example-feature-notification-center",
+      "revision": "2026-07-15-feature-1",
+      "type": "feature",
+      "category": "product",
+      "title": "Nuevo centro de notificaciones",
+      "message": "ClipDock ahora puede mostrar avisos del Marketplace dentro de un centro de notificaciones con historial y previsualizacion.",
       "changelog": [
-        "Nuevo centro de notificaciones con historial local y previsualización.",
-        "La tienda se sincroniza al arrancar y una vez al día.",
-        "Actualizaciones agrupadas para componentes, modelos IA, complementos y ClipDock.",
-        "Los doclets pueden solicitar descargas mediante la cola de trabajos.",
-        "Nuevo sistema de respaldo en la nube para doclets compatibles.",
-        "Mejoras de rendimiento al cargar el catálogo del Marketplace.",
-        "Correcciones visuales en la barra superior y controles de ventana.",
-        "Correcciones de estabilidad en trabajos largos y reconexión del motor.",
-        "Mejoras de accesibilidad, mensajes de error y estados de progreso."
+        "Los avisos permanecen guardados aunque desaparezcan del archivo remoto.",
+        "Cada aviso puede incluir imagen, changelog y una accion.",
+        "Los avisos se pueden abrir desde la campana de la barra superior."
       ],
-      "versionFrom": "1.6.3",
-      "versionTo": "2.0.0",
-      "createdAt": "2026-07-15T00:00:00.000Z",
-      "action": {
-        "type": "open-updates"
-      }
+      "createdAt": "2026-07-15T00:00:00.000Z"
     },
     {
-      "id": "example-plugin-clipdockboard-update",
-      "revision": "0.2.0-example",
-      "type": "plugin-update",
-      "category": "plugins",
-      "targetId": "clipdock-postits",
-      "title": "Actualización de ClipdockBoard",
-      "message": "Hay una nueva versión del doclet ClipdockBoard disponible en la tienda.",
+      "id": "example-doclet-spotlight",
+      "revision": "2026-07-15-doclet-1",
+      "type": "announcement",
+      "category": "doclets",
+      "title": "Doclet destacado: ClipdockBoard",
+      "message": "Conoce un doclet creado para dibujar, organizar post-its y trabajar sobre un lienzo dentro de ClipDock.",
       "changelog": [
-        "Lienzo gris oscuro para mejorar la visibilidad.",
-        "Selector de colores reorganizado con rojo como primer color.",
-        "Cursores visuales para lápiz, borrador, formas y selección.",
-        "Borrador con tamaño configurable y círculo de previsualización.",
-        "Exportación conectada con la cola de trabajos de ClipDock."
+        "Los doclets viven fuera del nucleo de ClipDock.",
+        "Cada doclet puede incluir todos sus recursos dentro de su paquete.",
+        "El Marketplace conserva la informacion visual y el doclet se distribuye desde su release."
       ],
-      "versionFrom": "0.1.0",
-      "versionTo": "0.2.0",
       "createdAt": "2026-07-15T00:05:00.000Z",
       "action": {
         "type": "open-plugin",
@@ -56,148 +35,50 @@
       }
     },
     {
-      "id": "example-component-deno-update",
-      "revision": "2.9.3-example",
-      "type": "component-update",
-      "category": "components",
-      "targetId": "deno",
-      "title": "Actualización de componente: Deno",
-      "message": "Hay una versión nueva del componente Deno disponible.",
-      "changelog": [
-        "Actualización del runtime a una versión compatible con los doclets actuales.",
-        "Mejoras de compatibilidad con tareas en segundo plano.",
-        "Correcciones en permisos y comunicación con el motor."
-      ],
-      "versionFrom": "2.9.2",
-      "versionTo": "2.9.3",
-      "createdAt": "2026-07-15T00:10:00.000Z",
-      "action": {
-        "type": "open-components"
-      }
-    },
-    {
-      "id": "example-model-upscale-update",
-      "revision": "4.1.0-example",
-      "type": "model-update",
-      "category": "models",
-      "targetId": "realesrgan-x4plus",
-      "title": "Actualización de modelo IA",
-      "message": "El modelo de mejora de imagen tiene una versión nueva disponible.",
-      "changelog": [
-        "Mejor detalle en texturas y bordes.",
-        "Menor consumo de memoria durante la mejora de imágenes.",
-        "Compatibilidad ampliada con imágenes grandes."
-      ],
-      "versionFrom": "4.0.2",
-      "versionTo": "4.1.0",
-      "createdAt": "2026-07-15T00:15:00.000Z",
-      "action": {
-        "type": "open-models"
-      }
-    },
-    {
-      "id": "example-security-advisory",
-      "revision": "2026-07-15-example",
+      "id": "example-security-notice",
+      "revision": "2026-07-15-security-1",
       "type": "security",
       "category": "security",
-      "title": "Aviso de seguridad",
-      "message": "Se recomienda actualizar los componentes y complementos relacionados con descargas para mantener el entorno protegido.",
+      "title": "Aviso de proteccion",
+      "message": "Se reforzaron las validaciones de fuentes remotas y de archivos recibidos desde el Marketplace.",
       "changelog": [
-        "Se actualizaron validaciones de archivos descargados.",
-        "Se reforzó la comprobación de fuentes remotas.",
-        "Se corrigieron mensajes y estados de error durante una descarga fallida."
+        "Se revisaron las validaciones de archivos descargados.",
+        "Se reforzo la comprobacion de fuentes remotas.",
+        "Se mejoraron los mensajes cuando una operacion no puede verificarse."
       ],
-      "createdAt": "2026-07-15T00:20:00.000Z"
+      "createdAt": "2026-07-15T00:10:00.000Z"
     },
     {
-      "id": "example-maintenance-marketplace",
-      "revision": "2026-07-15-example",
+      "id": "example-marketplace-maintenance",
+      "revision": "2026-07-15-maintenance-1",
       "type": "maintenance",
       "category": "marketplace",
       "title": "Mantenimiento del Marketplace",
-      "message": "El catálogo puede tardar unos minutos más en actualizarse mientras se publica una nueva compilación.",
+      "message": "El catalogo puede tardar unos minutos mas en reflejar cambios mientras se reorganizan sus metadatos.",
       "changelog": [
-        "Se reorganizaron los metadatos del catálogo.",
-        "Los archivos de lanzamiento siguen alojados en sus repositorios correspondientes.",
-        "No es necesario reinstalar los complementos ya instalados."
+        "Los banners y logos continuan viviendo en el Marketplace.",
+        "Los archivos ZIP siguen alojados en los releases de sus repositorios.",
+        "Los complementos instalados no se eliminan durante el mantenimiento."
       ],
-      "createdAt": "2026-07-15T00:25:00.000Z"
+      "createdAt": "2026-07-15T00:15:00.000Z"
     },
     {
       "id": "example-community-announcement",
-      "revision": "2026-07-15-example",
+      "revision": "2026-07-15-community-1",
       "type": "announcement",
       "category": "community",
-      "title": "Nuevos doclets en preparación",
-      "message": "Estamos preparando nuevos doclets para ampliar el flujo de trabajo de ClipDock.",
+      "title": "Nuevos doclets en preparacion",
+      "message": "Estamos preparando nuevos modulos HTML para ampliar los flujos creativos de ClipDock.",
       "changelog": [
-        "Se aceptan propuestas para nuevos módulos HTML.",
-        "Los doclets continuarán viviendo fuera del núcleo de ClipDock.",
-        "Las versiones publicadas se distribuirán mediante releases de sus repositorios."
+        "Se aceptan propuestas para nuevos modulos.",
+        "Los doclets continuaran funcionando como paquetes independientes.",
+        "Las novedades del proyecto se publicaran en el repositorio del Marketplace."
       ],
-      "createdAt": "2026-07-15T00:30:00.000Z",
+      "createdAt": "2026-07-15T00:20:00.000Z",
       "action": {
         "type": "open-url",
         "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0"
       }
-    }
-  ],
-  "actionExamples": [
-    {
-      "type": "update-group",
-      "group": "app",
-      "ids": ["clipdock"],
-      "description": "Actualiza la versión del programa."
-    },
-    {
-      "type": "update-group",
-      "group": "components",
-      "ids": ["deno", "ffmpeg"],
-      "description": "Actualiza todos los componentes del grupo."
-    },
-    {
-      "type": "update-group",
-      "group": "models",
-      "ids": ["realesrgan-x4plus"],
-      "description": "Descarga o actualiza todos los modelos del grupo."
-    },
-    {
-      "type": "update-group",
-      "group": "plugins",
-      "ids": ["clipdock-postits"],
-      "description": "Actualiza complementos y doclets mediante el instalador de la tienda."
-    },
-    {
-      "type": "open-plugin",
-      "targetId": "clipdock-postits",
-      "description": "Abre la ficha de un complemento o doclet."
-    },
-    {
-      "type": "open-components",
-      "description": "Abre la sección de componentes."
-    },
-    {
-      "type": "open-models",
-      "description": "Abre la sección de modelos IA."
-    },
-    {
-      "type": "open-updates",
-      "description": "Abre la sección de actualizaciones de ClipDock."
-    },
-    {
-      "type": "open-url",
-      "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0",
-      "description": "Abre una página externa."
-    },
-    {
-      "type": "update-program",
-      "programType": "component",
-      "targetId": "deno",
-      "description": "Actualiza un componente o modelo específico."
-    },
-    {
-      "type": "install-app-update",
-      "description": "Inicia la instalación de la actualización de ClipDock disponible."
     }
   ]
 }
