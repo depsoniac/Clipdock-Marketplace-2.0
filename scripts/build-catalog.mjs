@@ -28,6 +28,8 @@ const INDEX_FILE = path.join(PLUGINS_DIR, 'index.json');
 
 const RAW_BASE = 'https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins';
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
+const GITHUB_API_ATTEMPTS = 3;
+const GITHUB_API_RETRY_MS = 1200;
 
 const log = (...a) => console.log('[build-catalog]', ...a);
 const warn = (...a) => console.warn('[build-catalog] WARN', ...a);
@@ -54,10 +56,34 @@ function parseRepository(plugin) {
 async function githubApi(url) {
   const headers = { 'User-Agent': 'clipdock-marketplace-bot', 'Accept': 'application/vnd.github+json' };
   if (GITHUB_TOKEN) headers.Authorization = 'Bearer ' + GITHUB_TOKEN;
-  const res = await fetch(url, { headers });
-  if (res.status === 404) return { notFound: true };
-  if (!res.ok) throw new Error('GitHub API ' + res.status + ' en ' + url);
-  return res.json();
+  let lastError;
+
+  for (let attempt = 1; attempt <= GITHUB_API_ATTEMPTS; attempt++) {
+    try {
+      const res = await fetch(url, { headers, signal: AbortSignal.timeout(20000) });
+      if (res.status === 404) return { notFound: true };
+      if (res.ok) return res.json();
+
+      const error = new Error('GitHub API ' + res.status + ' en ' + url);
+      error.status = res.status;
+      lastError = error;
+
+      // Los errores temporales de GitHub merecen un reintento. Los 404 no,
+      // porque significan que el repositorio o release no existe.
+      if (![408, 425, 429, 500, 502, 503, 504].includes(res.status)) throw error;
+    } catch (error) {
+      lastError = error;
+      const status = Number(error && error.status) || 0;
+      const retryable = !status || [408, 425, 429, 500, 502, 503, 504].includes(status);
+      if (!retryable || attempt === GITHUB_API_ATTEMPTS) throw error;
+    }
+
+    const delay = GITHUB_API_RETRY_MS * (2 ** (attempt - 1));
+    warn('GitHub API temporalmente no disponible (intento ' + attempt + '/' + GITHUB_API_ATTEMPTS + '); reintento en ' + delay + ' ms.');
+    await new Promise(resolve => setTimeout(resolve, delay));
+  }
+
+  throw lastError || new Error('GitHub API no disponible.');
 }
 
 async function sha256AndSizeOf(url) {
@@ -142,6 +168,27 @@ function resolveAssetUrl(value, folder) {
   if (!text) return '';
   if (/^(data:|https?:|file:)/i.test(text)) return text;
   return RAW_BASE + '/' + folder + '/' + text.replace(/^\.?\//, '');
+}
+
+function readPreviousResolved() {
+  if (!fs.existsSync(RESOLVED_FILE)) return new Map();
+  try {
+    const previous = readJson(RESOLVED_FILE);
+    const plugins = Array.isArray(previous.plugins) ? previous.plugins : [];
+    return new Map(plugins.filter(p => p && p.id).map(p => [String(p.id), p]));
+  } catch (e) {
+    warn('No pude leer el catalogo resuelto anterior: ' + e.message);
+    return new Map();
+  }
+}
+
+function isTransientReleaseError(message) {
+  const text = String(message || '').toLowerCase();
+  return /github api (408|425|429|500|502|503|504)/.test(text)
+    || text.includes('fetch failed')
+    || text.includes('timeout')
+    || text.includes('timed out')
+    || text.includes('network');
 }
 
 function buildResolvedPlugin(plugin, folder, release) {
@@ -229,6 +276,8 @@ async function main() {
 
   const folders = [];
   const resolved = [];
+  const previousResolved = readPreviousResolved();
+  const transientFailures = [];
 
   for (const folder of entries) {
     const manifestPath = path.join(PLUGINS_DIR, folder, 'plugin.json');
@@ -245,10 +294,44 @@ async function main() {
     try { release = await resolveRelease(plugin); }
     catch (e) { warn(folder + ': fallo al resolver release (' + e.message + ').'); release = { available: false, releaseError: e.message }; }
 
+    // Un fallo temporal no debe borrar del catalogo el ultimo ZIP valido.
+    // Esto evita que una respuesta 5xx de GitHub deje el complemento roto en
+    // todos los clientes hasta la siguiente ejecucion programada.
+    if (!release.available && isTransientReleaseError(release.releaseError)) {
+      const previous = previousResolved.get(String(plugin.id || folder));
+      if (previous && previous.available && previous.downloadUrl) {
+        warn(folder + ': GitHub no respondio; conservo el release valido anterior v' + (previous.version || '?') + '.');
+        release = {
+          available: true,
+          repoInfo: previous.releaseInfo && previous.releaseInfo.owner && previous.releaseInfo.repo
+            ? { owner: previous.releaseInfo.owner, repo: previous.releaseInfo.repo }
+            : undefined,
+          version: previous.version,
+          downloadUrl: previous.downloadUrl,
+          fileName: previous.fileName,
+          sha256: previous.sha256,
+          sizeBytes: previous.package && previous.package.sizeBytes || 0,
+          sizeLabel: previous.sizeLabel || previous.package && previous.package.sizeLabel || '',
+          releaseUrl: previous.releaseInfo && previous.releaseInfo.url || '',
+          publishedAt: previous.releaseInfo && previous.releaseInfo.publishedAt || '',
+          preserved: true
+        };
+      } else {
+        transientFailures.push(folder + ': ' + (release.releaseError || 'fallo temporal de GitHub'));
+      }
+    }
+
     const entry = buildResolvedPlugin(plugin, folder, release);
     resolved.push(entry);
     if (entry.available) log('  -> v' + entry.version + '  ' + entry.fileName + '  ' + (entry.sizeLabel || '') + '  ' + (entry.sha256 ? 'sha256:' + entry.sha256.slice(0, 12) + '...' : '(sin sha, respaldo directo)'));
     else warn('  -> NO disponible: ' + entry.releaseError);
+  }
+
+  // Si un plugin nuevo no tiene todavía un release anterior y GitHub falló,
+  // detenemos la Action antes de escribir catalog-resolved.json degradado.
+  // El commit anterior queda intacto y la siguiente ejecución puede reintentar.
+  if (transientFailures.length) {
+    throw new Error('No se publico un catalogo incompleto. Fallos temporales:\n- ' + transientFailures.join('\n- '));
   }
 
   const today = new Date().toISOString().slice(0, 10);
