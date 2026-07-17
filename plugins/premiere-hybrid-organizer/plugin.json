@@ -25,8 +25,8 @@
   "cepSubdir": "cep",
   "cepDirName": "PremiereHybridOrganizer",
   "images": {
-    "logo": "assets/logo.png",
-    "banner": "assets/banner.png"
+    "logo": "assets/logo.svg",
+    "banner": "assets/banner.svg"
   },
   "links": {
     "support": "mailto:depsoncontacto@gmail.com?subject=Bug%20PR%20Hybrid%20Organizer",

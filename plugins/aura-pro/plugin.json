@@ -28,8 +28,8 @@
     "release": "https://github.com/depsonopsito/Aura-Pro-main/releases/latest"
   },
   "images": {
-    "logo": "assets/logo.png",
-    "banner": "assets/banner.png"
+    "logo": "assets/logo.svg",
+    "banner": "assets/banner.svg"
   },
   "credit": {
     "by": "Animateo",

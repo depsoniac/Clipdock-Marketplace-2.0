@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
-  <rect width="256" height="256" rx="54" fill="#111820"/>
-  <path d="M72 54h112c13 0 24 11 24 24v124l-80-38-80 38V78c0-13 11-24 24-24Z" fill="#c9ff3d"/>
-  <path d="M88 86h80M88 114h58M88 142h72" stroke="#111820" stroke-width="13" stroke-linecap="round"/>
-  <circle cx="178" cy="78" r="18" fill="#66d9ef" stroke="#111820" stroke-width="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">ClipDock Saves</title><desc id="desc">GUARDA TUS LINKS</desc>
+  <defs><linearGradient id="bg" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#121b27"/><stop offset="1" stop-color="#171021"/></linearGradient><linearGradient id="main" x1="44" y1="44" x2="212" y2="212" gradientUnits="userSpaceOnUse"><stop stop-color="#64dfff"/><stop offset="1" stop-color="#c9ff3d"/></linearGradient></defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)" stroke="#64dfff" stroke-opacity=".62" stroke-width="6"/>
+  <circle cx="128" cy="128" r="72" fill="url(#main)" opacity=".95"/><text x="128" y="145" text-anchor="middle" fill="#101722" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900">CS</text>
+  <path d="M70 190h116" stroke="#fff" stroke-opacity=".55" stroke-width="9" stroke-linecap="round"/>
 </svg>

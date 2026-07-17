@@ -1,16 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520">
-  <rect width="1200" height="520" fill="#0b1016"/>
-  <rect x="72" y="76" width="280" height="320" rx="28" fill="#121922" stroke="#2d3948" stroke-width="3"/>
-  <rect x="394" y="58" width="330" height="360" rx="30" fill="#10151c" stroke="#c9ff3d" stroke-opacity=".65" stroke-width="3"/>
-  <rect x="766" y="92" width="300" height="286" rx="28" fill="#121922" stroke="#2d3948" stroke-width="3"/>
-  <rect x="100" y="108" width="224" height="126" rx="18" fill="#243244"/>
-  <rect x="426" y="94" width="266" height="148" rx="18" fill="#263147"/>
-  <rect x="796" y="124" width="240" height="118" rx="18" fill="#243244"/>
-  <path d="M128 278h166M128 312h124M128 346h144" stroke="#c5cedb" stroke-width="16" stroke-linecap="round"/>
-  <path d="M454 290h204M454 326h158M454 362h118" stroke="#f4f7fb" stroke-width="18" stroke-linecap="round"/>
-  <path d="M826 282h168M826 316h108" stroke="#c5cedb" stroke-width="16" stroke-linecap="round"/>
-  <path d="M554 34h96c12 0 22 10 22 22v106l-70-34-70 34V56c0-12 10-22 22-22Z" fill="#c9ff3d"/>
-  <circle cx="990" cy="118" r="42" fill="#66d9ef" opacity=".9"/>
-  <text x="80" y="458" fill="#fff" font-family="Segoe UI, Arial" font-size="58" font-weight="900">ClipDock Saves</text>
-  <text x="82" y="496" fill="#9aa7b8" font-family="Segoe UI, Arial" font-size="25" font-weight="700">Guarda publicaciones, videos, pins, tutoriales y paginas web</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">ClipDock Saves</title><desc id="desc">Tutoriales, referencias y enlaces siempre organizados.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1017"/><stop offset=".58" stop-color="#121b27"/><stop offset="1" stop-color="#15101e"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 160) rotate(120) scale(380 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#64dfff" stop-opacity=".28"/><stop offset="1" stop-color="#64dfff" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#glow)"/>
+  <path d="M0 465C230 398 350 500 568 405s287-228 632-201" fill="none" stroke="#64dfff" stroke-width="2" opacity=".3"/>
+  <rect x="74" y="84" width="68" height="68" rx="20" fill="#64dfff" opacity=".95"/><text x="108" y="128" text-anchor="middle" fill="#111722" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900">CS</text>
+  <text x="74" y="205" fill="#64dfff" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" letter-spacing="4">GUARDA TUS LINKS</text>
+  <text x="74" y="278" fill="#f5f7fb" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">ClipDock Saves</text>
+  <text x="78" y="324" fill="#b7c3d1" font-family="Arial,Helvetica,sans-serif" font-size="22">Tutoriales, referencias y enlaces siempre organizados.</text>
+  <rect x='74' y='372' width='137' height='42' rx='21' fill='#161b24' stroke='#64dfff' stroke-opacity='.55'/><text x='142.5' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>ENLACES</text><rect x='225' y='372' width='176' height='42' rx='21' fill='#161b24' stroke='#64dfff' stroke-opacity='.55'/><text x='313' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>TUTORIALES</text><rect x='415' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#64dfff' stroke-opacity='.55'/><text x='474' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>NUBE</text>
+  <g transform='translate(842 88)'><rect width='286' height='310' rx='28' fill='#142129' stroke='#64dfff' stroke-opacity='.55' stroke-width='2'/><path d='M75 55h136v198l-68-42-68 42z' fill='#64dfff' opacity='.92'/><path d='M111 101h63M111 132h63M111 163h42' stroke='#142129' stroke-width='10' stroke-linecap='round'/><circle cx='222' cy='229' r='34' fill='#c9ff3d'/><path d='m209 229 10 10 19-22' fill='none' stroke='#15202a' stroke-width='8' stroke-linecap='round' stroke-linejoin='round'/></g>
 </svg>
