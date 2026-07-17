@@ -1,6 +1,6 @@
 {
   "schema": "clipdock.registry.index.v1",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-07-17",
   "folders": [
     "audify",
     "aura-pro",
@@ -9,6 +9,7 @@
     "clipdock-remote-adobe",
     "clipdock-saves",
     "clipdock-track",
+    "fx-palette",
     "graph-editor-ae",
     "mask-unlinker",
     "mediavault",

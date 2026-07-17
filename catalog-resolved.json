@@ -1,7 +1,7 @@
 {
   "schema": "clipdock.registry.v2",
   "registryVersion": 2,
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-07-17",
   "name": "ClipDock Marketplace 2.0",
   "discovery": {
     "type": "folder-index",
@@ -106,6 +106,7 @@
           "aura-pro",
           "cache-pro",
           "clipdock-remote",
+          "fx-palette",
           "graph-editor-ae",
           "mask-unlinker",
           "mediavault",
@@ -148,7 +149,7 @@
       }
     ]
   },
-  "generatedAt": "2026-07-16T23:45:07.549Z",
+  "generatedAt": "2026-07-17T01:25:55.174Z",
   "registryMode": "resolved-folder-index",
   "plugins": [
     {
@@ -178,7 +179,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Audify",
-        "release": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest"
+        "release": "https://github.com/depsonopsito/Audify-After-Effect/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -222,32 +223,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:30.277Z"
+        "resolvedAt": "2026-07-17T01:25:48.498Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/audify/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest/download/Audify-After-Effect-main.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/download/1.0.0/Audify-After-Effect-main.zip",
       "fileName": "Audify-After-Effect-main.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "97d68d0e7e8f68c332c4d15786cb44d60117650b4fdd3d955493c4c834964ade",
+      "sizeLabel": "6.9 KB",
       "package": {
         "format": "zip",
         "file": "Audify-After-Effect-main.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest/download/Audify-After-Effect-main.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Audify-After-Effect/releases/download/1.0.0/Audify-After-Effect-main.zip",
+        "sha256": "97d68d0e7e8f68c332c4d15786cb44d60117650b4fdd3d955493c4c834964ade",
+        "sizeBytes": 7082,
+        "sizeLabel": "6.9 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T02:21:56Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Audify-After-Effect",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Audify-After-Effect/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Audify-After-Effect/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T02:21:56Z"
       },
       "available": true,
       "releaseError": "",
@@ -329,7 +330,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:30.673Z"
+        "resolvedAt": "2026-07-17T01:25:49.022Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/aura-pro/assets/banner.png",
@@ -388,7 +389,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Cache%20Pro",
-        "release": "https://github.com/depsonopsito/Cache-Pro/releases/latest"
+        "release": "https://github.com/depsonopsito/Cache-Pro/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -436,32 +437,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:39.415Z"
+        "resolvedAt": "2026-07-17T01:25:49.515Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/cache-pro/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/download/1.0.0/Cache-Pro-main.zip",
       "fileName": "Cache-Pro-main.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "de92265d768129e15af2d40ecf551b38b289444c248cb80ffc8767cdcc6279e8",
+      "sizeLabel": "6.3 KB",
       "package": {
         "format": "zip",
         "file": "Cache-Pro-main.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/latest/download/Cache-Pro-main.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Cache-Pro/releases/download/1.0.0/Cache-Pro-main.zip",
+        "sha256": "de92265d768129e15af2d40ecf551b38b289444c248cb80ffc8767cdcc6279e8",
+        "sizeBytes": 6400,
+        "sizeLabel": "6.3 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T02:41:40Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Cache-Pro",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Cache-Pro/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Cache-Pro/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T02:41:40Z"
       },
       "available": true,
       "releaseError": "",
@@ -514,7 +515,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:40.014Z"
+        "resolvedAt": "2026-07-17T01:25:49.979Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clipdock-Postits/releases/tag/1.4.0"
@@ -597,7 +598,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:41.827Z"
+        "resolvedAt": "2026-07-17T01:25:50.592Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-remote-adobe/assets/banner.png",
@@ -680,7 +681,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:46.239Z"
+        "resolvedAt": "2026-07-17T01:25:51.102Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/clipdock-saves/releases/tag/0.1.4"
@@ -765,7 +766,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:46.830Z"
+        "resolvedAt": "2026-07-17T01:25:51.627Z"
       },
       "links": {
         "release": "https://github.com/depsonopsito/Clidock-Track/releases/tag/0.2.0"
@@ -799,6 +800,107 @@
       "releaseError": "",
       "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/",
       "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-track/plugin.json"
+    },
+    {
+      "schema": "clipdock.plugin.v1",
+      "id": "fx-palette",
+      "slug": "fx-palette",
+      "name": "FX Palette",
+      "author": "Depson",
+      "authorLocation": "México",
+      "category": "after-effects",
+      "type": "after-effects-script",
+      "host": [
+        "After Effects"
+      ],
+      "minClipDockVersion": "2.0.0",
+      "version": "2.0.0",
+      "summary": "Cambia rápidamente el color de etiqueta de varias capas seleccionadas en After Effects.",
+      "description": "Panel ScriptUI para After Effects que permite aplicar colores de etiqueta a varias capas seleccionadas con un clic.",
+      "installMode": "download-ae-script",
+      "aeScriptFile": "Labels_Visual.jsx",
+      "installDirName": "fx-palette",
+      "installTarget": "After Effects > Scripts > ScriptUI Panels",
+      "tags": [
+        "After Effects",
+        "ScriptUI",
+        "Capas",
+        "Colores",
+        "Productividad"
+      ],
+      "details": [
+        {
+          "title": "Colores de etiqueta",
+          "text": "Elige entre los colores de etiquetas disponibles en After Effects desde un panel visual y compacto."
+        },
+        {
+          "title": "Varias capas a la vez",
+          "text": "Selecciona varias capas en una composición y aplica el mismo color a todas con un solo clic."
+        },
+        {
+          "title": "Panel ScriptUI",
+          "text": "Se instala directamente en la carpeta ScriptUI Panels de After Effects y aparece en el menú Ventana."
+        }
+      ],
+      "instructions": [
+        "Instala FX Palette desde ClipDock.",
+        "Cierra y vuelve a abrir After Effects si estaba abierto.",
+        "Abre el panel desde Ventana > FX Palette o Ventana > Labels, según la versión de After Effects.",
+        "Selecciona una o varias capas y pulsa el color que quieras aplicar."
+      ],
+      "images": {
+        "logo": "assets/logo.svg",
+        "banner": "assets/banner.svg"
+      },
+      "links": {
+        "github": "https://github.com/depsonopsito/FX-PALETTE",
+        "release": "https://github.com/depsonopsito/FX-PALETTE/releases/tag/2.0.0"
+      },
+      "creator": {
+        "handle": "depsonopsito",
+        "name": "Depson",
+        "github": "https://github.com/depsonopsito",
+        "avatar": "https://github.com/depsonopsito.png"
+      },
+      "repo": "https://github.com/depsonopsito/FX-PALETTE",
+      "repository": {
+        "provider": "github",
+        "owner": "depsonopsito",
+        "repo": "FX-PALETTE"
+      },
+      "release": {
+        "mode": "resolved",
+        "resolvedAt": "2026-07-17T01:25:52.124Z"
+      },
+      "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/fx-palette/assets/logo.svg",
+      "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/fx-palette/assets/banner.svg",
+      "screenshotUrls": [],
+      "downloadUrl": "https://github.com/depsonopsito/FX-PALETTE/releases/download/2.0.0/fx-palette-after-effects-1.0.0.zip",
+      "fileName": "fx-palette-after-effects-1.0.0.zip",
+      "sha256": "b73aa2f7b8405603546e4e07703283f1aa055493baaa001e889e0aac43b6b944",
+      "sizeLabel": "2.0 KB",
+      "package": {
+        "format": "zip",
+        "file": "fx-palette-after-effects-1.0.0.zip",
+        "downloadUrl": "https://github.com/depsonopsito/FX-PALETTE/releases/download/2.0.0/fx-palette-after-effects-1.0.0.zip",
+        "sha256": "b73aa2f7b8405603546e4e07703283f1aa055493baaa001e889e0aac43b6b944",
+        "sizeBytes": 1997,
+        "sizeLabel": "2.0 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-17T01:24:39Z"
+      },
+      "releaseInfo": {
+        "provider": "github",
+        "owner": "depsonopsito",
+        "repo": "FX-PALETTE",
+        "tag": "v2.0.0",
+        "url": "https://github.com/depsonopsito/FX-PALETTE/releases/tag/2.0.0",
+        "publishedAt": "2026-07-17T01:24:39Z"
+      },
+      "available": true,
+      "releaseError": "",
+      "remotePluginFolderUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/fx-palette/",
+      "remoteManifestUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/fx-palette/plugin.json"
     },
     {
       "schema": "clipdock.plugin.v1",
@@ -875,7 +977,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:47.130Z"
+        "resolvedAt": "2026-07-17T01:25:52.699Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/graph-editor-ae/assets/logo.png",
       "bannerUrl": "",
@@ -934,7 +1036,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Mask%20Unlinker",
-        "release": "https://github.com/depsonopsito/Mask-Unliker/releases/latest"
+        "release": "https://github.com/depsonopsito/Mask-Unliker/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -978,32 +1080,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:55.895Z"
+        "resolvedAt": "2026-07-17T01:25:53.163Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mask-unlinker/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/download/1.0.0/Mask-Unliker.zip",
       "fileName": "Mask-Unliker.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "80dd70f629f811253ad30d01ed9f910be87e833f21bfe007611fb012ff0fa6de",
+      "sizeLabel": "7.2 KB",
       "package": {
         "format": "zip",
         "file": "Mask-Unliker.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/latest/download/Mask-Unliker.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Mask-Unliker/releases/download/1.0.0/Mask-Unliker.zip",
+        "sha256": "80dd70f629f811253ad30d01ed9f910be87e833f21bfe007611fb012ff0fa6de",
+        "sizeBytes": 7371,
+        "sizeLabel": "7.2 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:18:25Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Mask-Unliker",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Mask-Unliker/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Mask-Unliker/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:18:25Z"
       },
       "available": true,
       "releaseError": "",
@@ -1087,7 +1189,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:56.161Z"
+        "resolvedAt": "2026-07-17T01:25:53.598Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/mediavault/assets/banner.png",
@@ -1191,7 +1293,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:44:56.759Z"
+        "resolvedAt": "2026-07-17T01:25:54.081Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/premiere-hybrid-organizer/assets/banner.png",
@@ -1252,7 +1354,7 @@
         "instagram": "https://www.instagram.com/animateoo/",
         "email": "mateosistema@gmail.com",
         "support": "mailto:mateosistema@gmail.com?subject=Soporte%20Shuttle",
-        "release": "https://github.com/depsonopsito/Shuttle-main/releases/latest"
+        "release": "https://github.com/depsonopsito/Shuttle-main/releases/tag/1.0.0"
       },
       "images": {
         "logo": "assets/logo.png",
@@ -1300,32 +1402,32 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:45:05.418Z"
+        "resolvedAt": "2026-07-17T01:25:54.571Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/shuttle/assets/banner.png",
       "screenshotUrls": [],
-      "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/latest/download/Shuttle.zip",
+      "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/download/1.0.0/Shuttle.zip",
       "fileName": "Shuttle.zip",
-      "sha256": "",
-      "sizeLabel": "",
+      "sha256": "70b09e470482bf670694ebd30de99da8bafea6eac8e73be77ffd8b29e109982d",
+      "sizeLabel": "66.6 KB",
       "package": {
         "format": "zip",
         "file": "Shuttle.zip",
-        "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/latest/download/Shuttle.zip",
-        "sha256": "",
-        "sizeBytes": 0,
-        "sizeLabel": "",
-        "source": "github-latest-download-direct",
-        "updatedAt": ""
+        "downloadUrl": "https://github.com/depsonopsito/Shuttle-main/releases/download/1.0.0/Shuttle.zip",
+        "sha256": "70b09e470482bf670694ebd30de99da8bafea6eac8e73be77ffd8b29e109982d",
+        "sizeBytes": 68189,
+        "sizeLabel": "66.6 KB",
+        "source": "github-release-asset",
+        "updatedAt": "2026-07-11T03:28:27Z"
       },
       "releaseInfo": {
         "provider": "github",
         "owner": "depsonopsito",
         "repo": "Shuttle-main",
         "tag": "v1.0.0",
-        "url": "https://github.com/depsonopsito/Shuttle-main/releases/latest",
-        "publishedAt": ""
+        "url": "https://github.com/depsonopsito/Shuttle-main/releases/tag/1.0.0",
+        "publishedAt": "2026-07-11T03:28:27Z"
       },
       "available": true,
       "releaseError": "",
@@ -1408,7 +1510,7 @@
       },
       "release": {
         "mode": "resolved",
-        "resolvedAt": "2026-07-16T23:45:07.548Z"
+        "resolvedAt": "2026-07-17T01:25:55.173Z"
       },
       "logoUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/logo.png",
       "bannerUrl": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/text-presets-ae/assets/banner.png",
