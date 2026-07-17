@@ -27,8 +27,8 @@
     "release": "https://github.com/depsonopsito/Clipdock-Remote/releases/latest"
   },
   "images": {
-    "logo": "assets/logo.svg",
-    "banner": "assets/banner.svg"
+    "logo": "assets/logo.png",
+    "banner": "assets/banner.png"
   },
   "creator": {
     "handle": "depsoniac",

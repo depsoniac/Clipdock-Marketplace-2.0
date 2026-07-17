@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">GraphEditor</title><desc id="desc">CURVAS BEZIER</desc>
-  <defs><linearGradient id="bg" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#121b27"/><stop offset="1" stop-color="#171021"/></linearGradient><linearGradient id="main" x1="44" y1="44" x2="212" y2="212" gradientUnits="userSpaceOnUse"><stop stop-color="#a48cff"/><stop offset="1" stop-color="#64dfff"/></linearGradient></defs>
-  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)" stroke="#a48cff" stroke-opacity=".62" stroke-width="6"/>
-  <circle cx="128" cy="128" r="72" fill="url(#main)" opacity=".95"/><text x="128" y="145" text-anchor="middle" fill="#101722" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900">GE</text>
-  <path d="M70 190h116" stroke="#fff" stroke-opacity=".55" stroke-width="9" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t d">
+  <title id="t">GraphEditor</title><desc id="d">Curvas Bezier y keyframes</desc>
+  <defs><linearGradient id="b" x1="18" y1="18" x2="238" y2="238"><stop stop-color="#17152d"/><stop offset="1" stop-color="#11242e"/></linearGradient><linearGradient id="g" x1="46" y1="198" x2="211" y2="56"><stop stop-color="#9a88ff"/><stop offset="1" stop-color="#64dfff"/></linearGradient></defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#b)" stroke="#7568c7" stroke-width="6"/>
+  <path d="M48 207V48M48 207h160" stroke="#6c6788" stroke-width="6" stroke-linecap="round"/>
+  <path d="M58 190c40 0 29-100 76-85 43 14 35 65 72-48" fill="none" stroke="url(#g)" stroke-width="13" stroke-linecap="round"/>
+  <path d="M58 190 98 190M134 105 96 91M206 57h-42" stroke="#c9c4ff" stroke-opacity=".6" stroke-width="5"/>
+  <g fill="#fff" stroke="#9a88ff" stroke-width="5"><circle cx="58" cy="190" r="11"/><circle cx="134" cy="105" r="11"/><circle cx="206" cy="57" r="11"/></g>
 </svg>

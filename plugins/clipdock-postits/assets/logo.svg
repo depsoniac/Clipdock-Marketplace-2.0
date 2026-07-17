@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">ClipdockBoard</title><desc id="desc">NOTAS Y DIBUJO</desc>
-  <defs><linearGradient id="bg" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#121b27"/><stop offset="1" stop-color="#171021"/></linearGradient><linearGradient id="main" x1="44" y1="44" x2="212" y2="212" gradientUnits="userSpaceOnUse"><stop stop-color="#c9ff3d"/><stop offset="1" stop-color="#9a88ff"/></linearGradient></defs>
-  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)" stroke="#c9ff3d" stroke-opacity=".62" stroke-width="6"/>
-  <circle cx="128" cy="128" r="72" fill="url(#main)" opacity=".95"/><text x="128" y="145" text-anchor="middle" fill="#101722" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900">CB</text>
-  <path d="M70 190h116" stroke="#fff" stroke-opacity=".55" stroke-width="9" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t d">
+  <title id="t">ClipdockBoard</title><desc id="d">Notas post-it y dibujo</desc>
+  <defs><linearGradient id="b" x1="18" y1="18" x2="238" y2="238"><stop stop-color="#17231a"/><stop offset="1" stop-color="#18182b"/></linearGradient></defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#b)" stroke="#8ebc36" stroke-width="6"/>
+  <path d="M47 58h111v111l-28 28H47z" fill="#c9ff3d"/><path d="M130 169v28l28-28z" fill="#6f9124"/>
+  <path d="M72 91h60M72 118h43M72 145h52" stroke="#18211d" stroke-width="10" stroke-linecap="round"/>
+  <path d="m117 202 72-72 24 24-72 72-37 12z" fill="#9a88ff"/><path d="m189 130 12-12 24 24-12 12z" fill="#f3f1ff"/>
+  <path d="m104 238 13-36 24 24z" fill="#ffd89c"/>
 </svg>

@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-  <title id="title">Aura Pro</title><desc id="desc">PALETAS DE COLOR</desc>
-  <defs><linearGradient id="bg" x1="16" y1="16" x2="240" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#121b27"/><stop offset="1" stop-color="#171021"/></linearGradient><linearGradient id="main" x1="44" y1="44" x2="212" y2="212" gradientUnits="userSpaceOnUse"><stop stop-color="#ffbf5b"/><stop offset="1" stop-color="#ff6f91"/></linearGradient></defs>
-  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#bg)" stroke="#ffbf5b" stroke-opacity=".62" stroke-width="6"/>
-  <circle cx="128" cy="128" r="72" fill="url(#main)" opacity=".95"/><text x="128" y="145" text-anchor="middle" fill="#101722" font-family="Arial,Helvetica,sans-serif" font-size="52" font-weight="900">AP</text>
-  <path d="M70 190h116" stroke="#fff" stroke-opacity=".55" stroke-width="9" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="t d">
+  <title id="t">Aura Pro</title><desc id="d">Paleta profesional de color</desc>
+  <defs><linearGradient id="b" x1="18" y1="18" x2="238" y2="238"><stop stop-color="#2d1e15"/><stop offset="1" stop-color="#23152a"/></linearGradient><linearGradient id="r" x1="58" y1="48" x2="205" y2="205"><stop stop-color="#ffd45c"/><stop offset="1" stop-color="#ff6f91"/></linearGradient></defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#b)" stroke="#d69a48" stroke-width="6"/>
+  <path d="M128 43c-50 0-89 35-89 80 0 38 30 70 68 70h15c10 0 16-12 10-21-10-15 3-32 22-32h18c29 0 48-19 48-45 0-30-32-52-92-52Z" fill="url(#r)"/>
+  <circle cx="83" cy="111" r="13" fill="#ff6b78"/><circle cx="115" cy="78" r="13" fill="#ffd15c"/><circle cx="157" cy="82" r="13" fill="#64dfff"/><circle cx="185" cy="112" r="13" fill="#7de09d"/>
+  <path d="m70 205 42-42 19 19 48-48" fill="none" stroke="#fff" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
