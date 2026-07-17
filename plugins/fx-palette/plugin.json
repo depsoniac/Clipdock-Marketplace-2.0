@@ -1,0 +1,73 @@
+{
+  "schema": "clipdock.plugin.v1",
+  "id": "fx-palette",
+  "slug": "fx-palette",
+  "name": "FX Palette",
+  "author": "Depson",
+  "authorLocation": "México",
+  "category": "after-effects",
+  "type": "after-effects-script",
+  "host": [
+    "After Effects"
+  ],
+  "minClipDockVersion": "2.0.0",
+  "version": "1.0.0",
+  "summary": "Cambia rápidamente el color de etiqueta de varias capas seleccionadas en After Effects.",
+  "description": "Panel ScriptUI para After Effects que permite aplicar colores de etiqueta a varias capas seleccionadas con un clic.",
+  "installMode": "download-ae-script",
+  "aeScriptFile": "Labels_Visual.jsx",
+  "installDirName": "fx-palette",
+  "installTarget": "After Effects > Scripts > ScriptUI Panels",
+  "tags": [
+    "After Effects",
+    "ScriptUI",
+    "Capas",
+    "Colores",
+    "Productividad"
+  ],
+  "details": [
+    {
+      "title": "Colores de etiqueta",
+      "text": "Elige entre los colores de etiquetas disponibles en After Effects desde un panel visual y compacto."
+    },
+    {
+      "title": "Varias capas a la vez",
+      "text": "Selecciona varias capas en una composición y aplica el mismo color a todas con un solo clic."
+    },
+    {
+      "title": "Panel ScriptUI",
+      "text": "Se instala directamente en la carpeta ScriptUI Panels de After Effects y aparece en el menú Ventana."
+    }
+  ],
+  "instructions": [
+    "Instala FX Palette desde ClipDock.",
+    "Cierra y vuelve a abrir After Effects si estaba abierto.",
+    "Abre el panel desde Ventana > FX Palette o Ventana > Labels, según la versión de After Effects.",
+    "Selecciona una o varias capas y pulsa el color que quieras aplicar."
+  ],
+  "images": {
+    "logo": "assets/logo.svg",
+    "banner": "assets/banner.svg"
+  },
+  "links": {
+    "github": "https://github.com/depsonopsito/FX-PALETTE",
+    "release": "https://github.com/depsonopsito/FX-PALETTE/releases/latest"
+  },
+  "creator": {
+    "handle": "depsonopsito",
+    "name": "Depson",
+    "github": "https://github.com/depsonopsito",
+    "avatar": "https://github.com/depsonopsito.png"
+  },
+  "repo": "https://github.com/depsonopsito/FX-PALETTE",
+  "repository": {
+    "provider": "github",
+    "owner": "depsonopsito",
+    "repo": "FX-PALETTE"
+  },
+  "release": {
+    "mode": "github-latest-release",
+    "assetName": "fx-palette-after-effects-1.0.0.zip"
+  },
+  "enabled": true
+}

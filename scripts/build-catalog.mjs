@@ -132,6 +132,12 @@ async function resolveRelease(plugin) {
     let asset = null;
     if (declaredPattern) asset = assets.find(a => wildcardToRegExp(declaredPattern).test(String(a.name || '')));
     if (!asset && declaredAsset) asset = assets.find(a => String(a.name || '').toLowerCase() === declaredAsset.toLowerCase());
+    // Si el plugin declara un paquete concreto, no sustituirlo silenciosamente
+    // por otro formato (por ejemplo .rar): ClipDock instala complementos remotos
+    // desde ZIP y publicar otro asset dejaría un botón de instalación roto.
+    if (!asset && (declaredPattern || declaredAsset)) {
+      return { available: false, releaseError: 'El release no contiene el asset declarado: ' + (declaredAsset || declaredPattern), repoInfo, version, releaseUrl: release.html_url || '' };
+    }
     if (!asset) asset = assets.find(a => /\.zip$/i.test(String(a.name || '')));
     if (!asset) asset = assets[0];
 
