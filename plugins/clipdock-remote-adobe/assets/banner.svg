@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">ClipDock Remote</title><desc id="desc">Una conexión visual entre ClipDock y las aplicaciones de Adobe.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d120b"/><stop offset=".55" stop-color="#1b2510"/><stop offset="1" stop-color="#191533"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c9ff3d" stop-opacity="0"/><stop offset=".45" stop-color="#c9ff3d"/><stop offset="1" stop-color="#9b86ff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="25"/></filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <ellipse cx="960" cy="243" rx="270" ry="180" fill="#c9ff3d" opacity=".12" filter="url(#glow)"/>
+  <path d="M569 372c155-99 230-115 338-43 105 70 203 21 312-71" fill="none" stroke="#a793ff" stroke-width="2" opacity=".22"/>
+  <g transform="translate(703 72)">
+    <rect x="0" y="31" width="166" height="266" rx="28" fill="#17231a" stroke="#c9ff3d" stroke-opacity=".62" stroke-width="2"/>
+    <rect x="270" y="31" width="166" height="266" rx="28" fill="#211b36" stroke="#a793ff" stroke-opacity=".62" stroke-width="2"/>
+    <rect x="42" y="76" width="82" height="82" rx="20" fill="#263d1c"/><path d="M62 130h42M83 109v42" stroke="#c9ff3d" stroke-width="8" stroke-linecap="round"/>
+    <rect x="312" y="76" width="82" height="82" rx="20" fill="#332956"/><path d="M333 118c21-22 42-22 62 0M333 139c21 22 42 22 62 0" fill="none" stroke="#b9a7ff" stroke-width="7" stroke-linecap="round"/>
+    <rect x="36" y="188" width="94" height="14" rx="7" fill="#547542"/><rect x="306" y="188" width="94" height="14" rx="7" fill="#63547f"/>
+    <path d="M167 164h102" stroke="url(#beam)" stroke-width="10" stroke-linecap="round"/>
+    <path d="m245 138 36 26-36 26z" fill="#c9ff3d"/>
+    <path d="M274 103c34 31 34 91 0 122M294 83c54 49 54 133 0 182" fill="none" stroke="#a793ff" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="218" cy="164" r="43" fill="#c9ff3d" opacity=".16" filter="url(#glow)"/>
+  </g>
+</svg>

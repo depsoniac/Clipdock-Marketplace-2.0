@@ -1,12 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">PR Hybrid Organizer</title><desc id="desc">Organiza proyectos complejos de Premiere Pro.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1017"/><stop offset=".58" stop-color="#121b27"/><stop offset="1" stop-color="#15101e"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 160) rotate(120) scale(380 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#8da6ff" stop-opacity=".28"/><stop offset="1" stop-color="#8da6ff" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#glow)"/>
-  <path d="M0 465C230 398 350 500 568 405s287-228 632-201" fill="none" stroke="#8da6ff" stroke-width="2" opacity=".3"/>
-  <rect x="74" y="84" width="68" height="68" rx="20" fill="#8da6ff" opacity=".95"/><text x="108" y="128" text-anchor="middle" fill="#111722" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900">PR</text>
-  <text x="74" y="205" fill="#8da6ff" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" letter-spacing="4">ORDENA BINS Y MEDIA</text>
-  <text x="74" y="278" fill="#f5f7fb" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">PR Hybrid Organizer</text>
-  <text x="78" y="324" fill="#b7c3d1" font-family="Arial,Helvetica,sans-serif" font-size="22">Organiza proyectos complejos de Premiere Pro.</text>
-  <rect x='74' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#8da6ff' stroke-opacity='.55'/><text x='133' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>BINS</text><rect x='206' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#8da6ff' stroke-opacity='.55'/><text x='265' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>MEDIA</text><rect x='338' y='372' width='163' height='42' rx='21' fill='#161b24' stroke='#8da6ff' stroke-opacity='.55'/><text x='419.5' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>PROYECTOS</text>
-  <g transform='translate(842 88)'><rect width='286' height='310' rx='28' fill='#171b31' stroke='#8da6ff' stroke-opacity='.55' stroke-width='2'/><rect x='50' y='58' width='72' height='54' rx='10' fill='#8da6ff'/><rect x='164' y='58' width='72' height='54' rx='10' fill='#c99cff'/><rect x='107' y='194' width='72' height='54' rx='10' fill='#7e9cff'/><path d='M86 112v38h57v44M200 112v38h-57v44' fill='none' stroke='#d7ddff' stroke-opacity='.65' stroke-width='7'/></g>
+  <title id="title">PR Hybrid Organizer</title><desc id="desc">Un flujo visual para organizar bins y medios de Premiere.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1020"/><stop offset=".52" stop-color="#151a3a"/><stop offset="1" stop-color="#211532"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="21"/></filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <ellipse cx="987" cy="246" rx="264" ry="178" fill="#879dff" opacity=".14" filter="url(#blur)"/>
+  <path d="M600 123c146 23 193 125 306 63 90-49 188-9 293 38" fill="none" stroke="#9aaaff" stroke-width="2" opacity=".22"/>
+  <g transform="translate(681 62)">
+    <rect x="0" y="18" width="436" height="355" rx="30" fill="#191d42" stroke="#9baaff" stroke-opacity=".48" stroke-width="2"/>
+    <path d="M88 119v59h130v61M348 119v59H218v61" fill="none" stroke="#8fa4ff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="88" cy="101" r="12" fill="#c9ff3d"/><circle cx="348" cy="101" r="12" fill="#c9ff3d"/><circle cx="218" cy="239" r="12" fill="#c9ff3d"/>
+    <g transform="translate(42 47)"><path d="M0 26h58l15 16h93v81H0z" fill="#899bff"/><path d="M16 68h123" stroke="#31376d" stroke-width="9" stroke-linecap="round"/></g>
+    <g transform="translate(275 47)"><path d="M0 26h58l15 16h93v81H0z" fill="#d4a5ff"/><path d="M16 68h123" stroke="#59396b" stroke-width="9" stroke-linecap="round"/></g>
+    <g transform="translate(135 247)"><path d="M0 28h62l16 17h98v83H0z" fill="#748dff"/><rect x="18" y="61" width="99" height="11" rx="5" fill="#202756"/><rect x="18" y="84" width="65" height="9" rx="4.5" fill="#313c79"/></g>
+    <rect x="302" y="260" width="88" height="67" rx="16" fill="#273054" stroke="#b3beff" stroke-opacity=".5"/><path d="m324 290 14 13 27-32" fill="none" stroke="#c9ff3d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

@@ -1,12 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">MediaVault</title><desc id="desc">Centraliza y encuentra tus assets para After Effects.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1017"/><stop offset=".58" stop-color="#121b27"/><stop offset="1" stop-color="#15101e"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 160) rotate(120) scale(380 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#63dfff" stop-opacity=".28"/><stop offset="1" stop-color="#63dfff" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#glow)"/>
-  <path d="M0 465C230 398 350 500 568 405s287-228 632-201" fill="none" stroke="#63dfff" stroke-width="2" opacity=".3"/>
-  <rect x="74" y="84" width="68" height="68" rx="20" fill="#63dfff" opacity=".95"/><text x="108" y="128" text-anchor="middle" fill="#111722" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900">MV</text>
-  <text x="74" y="205" fill="#63dfff" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" letter-spacing="4">BIBLIOTECA DE MEDIOS</text>
-  <text x="74" y="278" fill="#f5f7fb" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">MediaVault</text>
-  <text x="78" y="324" fill="#b7c3d1" font-family="Arial,Helvetica,sans-serif" font-size="22">Centraliza y encuentra tus assets para After Effects.</text>
-  <rect x='74' y='372' width='124' height='42' rx='21' fill='#161b24' stroke='#63dfff' stroke-opacity='.55'/><text x='136' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>ASSETS</text><rect x='212' y='372' width='150' height='42' rx='21' fill='#161b24' stroke='#63dfff' stroke-opacity='.55'/><text x='287' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>BUSQUEDA</text><rect x='376' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#63dfff' stroke-opacity='.55'/><text x='435' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>ORDEN</text>
-  <g transform='translate(842 88)'><rect width='286' height='310' rx='28' fill='#14212a' stroke='#63dfff' stroke-opacity='.55' stroke-width='2'/><rect x='49' y='67' width='188' height='152' rx='16' fill='#1c3140'/><rect x='67' y='89' width='66' height='49' rx='7' fill='#63dfff'/><path d='m160 176 22-29 43 47H66l38-45 27 27z' fill='#74f0a2'/><rect x='75' y='236' width='136' height='18' rx='9' fill='#63dfff'/></g>
+  <title id="title">MediaVault</title><desc id="desc">Biblioteca de archivos visuales con búsqueda rápida.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091018"/><stop offset=".55" stop-color="#0c202b"/><stop offset="1" stop-color="#101735"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#193646"/><stop offset="1" stop-color="#0d1727"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="21"/></filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <ellipse cx="962" cy="238" rx="255" ry="190" fill="#5bdfff" opacity=".13" filter="url(#blur)"/>
+  <path d="M582 396C739 281 876 432 1200 256" fill="none" stroke="#62e1ff" stroke-width="2" opacity=".18"/>
+  <g transform="translate(708 63)">
+    <rect width="386" height="354" rx="31" fill="url(#panel)" stroke="#64ddff" stroke-opacity=".5" stroke-width="2"/>
+    <rect x="32" y="31" width="322" height="52" rx="15" fill="#0b1925" stroke="#64ddff" stroke-opacity=".35"/>
+    <circle cx="63" cy="57" r="10" fill="none" stroke="#8be9ff" stroke-width="4"/><path d="m70 64 10 10" stroke="#8be9ff" stroke-width="4" stroke-linecap="round"/>
+    <rect x="32" y="108" width="96" height="94" rx="15" fill="#3e8da4"/><path d="m43 184 26-33 19 20 15-15 18 28z" fill="#9cf3c1"/>
+    <rect x="145" y="108" width="96" height="94" rx="15" fill="#5262a4"/><circle cx="193" cy="153" r="26" fill="#e1b2ff"/><path d="m180 164 13-20 13 20z" fill="#18213d"/>
+    <rect x="258" y="108" width="96" height="94" rx="15" fill="#315161"/><path d="M272 183h69l-24-42-19 26-12-15z" fill="#75dfff"/>
+    <rect x="32" y="221" width="96" height="94" rx="15" fill="#24465a"/><rect x="145" y="221" width="96" height="94" rx="15" fill="#6551a4"/><rect x="258" y="221" width="96" height="94" rx="15" fill="#3e7f68"/>
+    <path d="M54 271h52M167 271h52M280 271h52" stroke="#d8f7ff" stroke-opacity=".76" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="349" cy="330" r="36" fill="#c9ff3d"/><path d="M336 330h26M349 317v26" stroke="#152424" stroke-width="7" stroke-linecap="round"/>
+  </g>
 </svg>

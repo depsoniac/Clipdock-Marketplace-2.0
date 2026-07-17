@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">ClipdockBoard</title><desc id="desc">Post-its y pizarron para ideas que no quieres perder.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1017"/><stop offset=".58" stop-color="#121b27"/><stop offset="1" stop-color="#15101e"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 160) rotate(120) scale(380 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#c9ff3d" stop-opacity=".28"/><stop offset="1" stop-color="#c9ff3d" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#glow)"/>
-  <path d="M0 465C230 398 350 500 568 405s287-228 632-201" fill="none" stroke="#c9ff3d" stroke-width="2" opacity=".3"/>
-  <rect x="74" y="84" width="68" height="68" rx="20" fill="#c9ff3d" opacity=".95"/><text x="108" y="128" text-anchor="middle" fill="#111722" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900">CB</text>
-  <text x="74" y="205" fill="#c9ff3d" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" letter-spacing="4">NOTAS Y DIBUJO</text>
-  <text x="74" y="278" fill="#f5f7fb" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">ClipdockBoard</text>
-  <text x="78" y="324" fill="#b7c3d1" font-family="Arial,Helvetica,sans-serif" font-size="22">Post-its y pizarron para ideas que no quieres perder.</text>
-  <rect x='74' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#c9ff3d' stroke-opacity='.55'/><text x='133' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>NOTAS</text><rect x='206' y='372' width='124' height='42' rx='21' fill='#161b24' stroke='#c9ff3d' stroke-opacity='.55'/><text x='268' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>DIBUJO</text><rect x='344' y='372' width='118' height='42' rx='21' fill='#161b24' stroke='#c9ff3d' stroke-opacity='.55'/><text x='403' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>IDEAS</text>
-  <g transform='translate(842 88)'><rect width='286' height='310' rx='28' fill='#1c2130' stroke='#c9ff3d' stroke-opacity='.55' stroke-width='2'/><rect x='38' y='48' width='124' height='115' rx='15' fill='#c9ff3d'/><rect x='132' y='92' width='116' height='112' rx='15' fill='#9a88ff'/><rect x='56' y='178' width='128' height='88' rx='15' fill='#ffcc8d'/><path d='M65 78h70M65 103h48M65 128h59' stroke='#1a1c29' stroke-width='10' stroke-linecap='round'/><path d='m188 228 45-45 16 16-45 45-27 8z' fill='#fff'/></g>
+  <title id="title">ClipdockBoard</title><desc id="desc">Un pizarrón creativo de notas y trazos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0e121b"/><stop offset=".55" stop-color="#20243a"/><stop offset="1" stop-color="#221c35"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <circle cx="974" cy="195" r="195" fill="#c9ff3d" opacity=".12" filter="url(#soft)"/>
+  <path d="M606 401c154-50 247 48 392-72 73-60 131-65 202-46" fill="none" stroke="#c9ff3d" stroke-width="2" opacity=".22"/>
+  <g transform="translate(690 53)">
+    <rect x="29" y="30" width="379" height="362" rx="29" fill="#30384e" stroke="#a9b8df" stroke-opacity=".36"/>
+    <g fill="#8490ae" opacity=".5"><circle cx="70" cy="71" r="2"/><circle cx="110" cy="71" r="2"/><circle cx="150" cy="71" r="2"/><circle cx="190" cy="71" r="2"/><circle cx="230" cy="71" r="2"/><circle cx="270" cy="71" r="2"/><circle cx="310" cy="71" r="2"/><circle cx="350" cy="71" r="2"/><circle cx="70" cy="111" r="2"/><circle cx="110" cy="111" r="2"/><circle cx="150" cy="111" r="2"/><circle cx="190" cy="111" r="2"/><circle cx="230" cy="111" r="2"/><circle cx="270" cy="111" r="2"/><circle cx="310" cy="111" r="2"/><circle cx="350" cy="111" r="2"/></g>
+    <rect x="71" y="103" width="155" height="139" rx="17" fill="#ffe17d" transform="rotate(-6 71 103)"/>
+    <rect x="215" y="147" width="145" height="135" rx="17" fill="#a993ff" transform="rotate(7 215 147)"/>
+    <rect x="100" y="251" width="151" height="101" rx="17" fill="#ffc68d" transform="rotate(4 100 251)"/>
+    <path d="M103 146c22-26 47 18 68-2s27-15 39 7M126 180c16-15 31-12 43 7s29-1 38-11M250 196c18 7 20 27 41 26 14-1 26-17 40-9" fill="none" stroke="#24263a" stroke-width="8" stroke-linecap="round"/>
+    <path d="m300 325 74-74 19 19-74 74-35 10z" fill="#fff"/><path d="m300 325 19 19-35 10z" fill="#e0d3ff"/>
+    <circle cx="376" cy="66" r="28" fill="#c9ff3d"/><path d="M376 52v28M362 66h28" stroke="#17241f" stroke-width="7" stroke-linecap="round"/>
+  </g>
 </svg>

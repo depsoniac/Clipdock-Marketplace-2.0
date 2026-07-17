@@ -1,12 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">ClipDock Track</title><desc id="desc">Controla videos, presupuestos y gastos del dia a dia.</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#0b1017"/><stop offset=".58" stop-color="#121b27"/><stop offset="1" stop-color="#15101e"/></linearGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(1000 160) rotate(120) scale(380 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#55e09a" stop-opacity=".28"/><stop offset="1" stop-color="#55e09a" stop-opacity="0"/></radialGradient></defs>
-  <rect width="1200" height="520" rx="28" fill="url(#bg)"/><rect width="1200" height="520" rx="28" fill="url(#glow)"/>
-  <path d="M0 465C230 398 350 500 568 405s287-228 632-201" fill="none" stroke="#55e09a" stroke-width="2" opacity=".3"/>
-  <rect x="74" y="84" width="68" height="68" rx="20" fill="#55e09a" opacity=".95"/><text x="108" y="128" text-anchor="middle" fill="#111722" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="900">CT</text>
-  <text x="74" y="205" fill="#55e09a" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" letter-spacing="4">PROYECTOS Y FINANZAS</text>
-  <text x="74" y="278" fill="#f5f7fb" font-family="Arial,Helvetica,sans-serif" font-size="66" font-weight="800" letter-spacing="-2">ClipDock Track</text>
-  <text x="78" y="324" fill="#b7c3d1" font-family="Arial,Helvetica,sans-serif" font-size="22">Controla videos, presupuestos y gastos del dia a dia.</text>
-  <rect x='74' y='372' width='124' height='42' rx='21' fill='#161b24' stroke='#55e09a' stroke-opacity='.55'/><text x='136' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>VIDEOS</text><rect x='212' y='372' width='202' height='42' rx='21' fill='#161b24' stroke='#55e09a' stroke-opacity='.55'/><text x='313' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>PRESUPUESTOS</text><rect x='428' y='372' width='124' height='42' rx='21' fill='#161b24' stroke='#55e09a' stroke-opacity='.55'/><text x='490' y='399' text-anchor='middle' fill='#edf4f8' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='800' letter-spacing='1.3'>GASTOS</text>
-  <g transform='translate(842 88)'><rect width='286' height='310' rx='28' fill='#172229' stroke='#55e09a' stroke-opacity='.55' stroke-width='2'/><rect x='48' y='57' width='190' height='194' rx='18' fill='#202d35'/><path d='M48 106h190' stroke='#55e09a' stroke-width='8'/><path d='M82 83h24M130 83h24M178 83h24' stroke='#ffd15b' stroke-width='10' stroke-linecap='round'/><rect x='82' y='134' width='28' height='72' rx='8' fill='#55e09a'/><rect x='129' y='160' width='28' height='46' rx='8' fill='#ffd15b'/><rect x='176' y='121' width='28' height='85' rx='8' fill='#71e0a0'/></g>
+  <title id="title">ClipDock Track</title><desc id="desc">Un tablero de proyectos, entregas y presupuesto.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09161a"/><stop offset=".55" stop-color="#0e292a"/><stop offset="1" stop-color="#122235"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+  <rect width="1200" height="520" rx="28" fill="url(#bg)"/>
+  <ellipse cx="982" cy="249" rx="240" ry="175" fill="#55e09a" opacity=".13" filter="url(#glow)"/>
+  <path d="M604 391c107-89 206-64 288-18 125 70 180-55 317-58" fill="none" stroke="#5ce2a0" stroke-width="2" opacity=".22"/>
+  <g transform="translate(706 61)">
+    <rect x="0" y="12" width="394" height="367" rx="30" fill="#142c30" stroke="#5ce2a0" stroke-opacity=".48" stroke-width="2"/>
+    <rect x="31" y="43" width="332" height="77" rx="17" fill="#0c1f25"/>
+    <circle cx="70" cy="81" r="20" fill="#c9ff3d"/><path d="M61 81h18M70 72v18" stroke="#173122" stroke-width="5" stroke-linecap="round"/>
+    <rect x="111" y="64" width="104" height="11" rx="5.5" fill="#b8ffe0"/><rect x="111" y="88" width="151" height="8" rx="4" fill="#5ea999"/>
+    <rect x="31" y="146" width="207" height="190" rx="20" fill="#102328"/>
+    <path d="M59 294h151" stroke="#2c5152" stroke-width="5"/>
+    <rect x="67" y="225" width="27" height="69" rx="8" fill="#58e09d"/><rect x="111" y="188" width="27" height="106" rx="8" fill="#c9ff3d"/><rect x="155" y="207" width="27" height="87" rx="8" fill="#74bddf"/>
+    <path d="m59 210 64-45 46 25 43-74" fill="none" stroke="#fff0a2" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="212" cy="116" r="8" fill="#fff0a2"/>
+    <rect x="258" y="146" width="105" height="190" rx="20" fill="#102328"/><circle cx="311" cy="207" r="37" fill="#ffd15b"/><path d="M311 185v44M294 197c7-8 32-8 32 5 0 17-32 6-32 24 0 14 25 14 34 5" fill="none" stroke="#1a382c" stroke-width="6" stroke-linecap="round"/>
+    <rect x="277" y="271" width="68" height="11" rx="5.5" fill="#63e8ac"/><rect x="287" y="299" width="48" height="8" rx="4" fill="#4c9380"/>
+  </g>
 </svg>
