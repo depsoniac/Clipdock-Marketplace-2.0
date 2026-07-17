@@ -1,15 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">FX Palette para Premiere Pro</title>
-  <desc id="desc">Banner de FX Palette, una paleta de búsqueda rápida para efectos, transiciones y presets</desc>
+  <title id="title">Labels PRO para After Effects</title>
+  <desc id="desc">Banner de Labels PRO, panel ScriptUI para cambiar colores de etiquetas en After Effects</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1200" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#100e1c"/>
-      <stop offset=".55" stop-color="#16142c"/>
-      <stop offset="1" stop-color="#291323"/>
+      <stop stop-color="#100e1c"/><stop offset=".55" stop-color="#16142c"/><stop offset="1" stop-color="#291323"/>
     </linearGradient>
     <linearGradient id="violet" x1="58" y1="70" x2="1115" y2="424" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9a88ff"/>
-      <stop offset="1" stop-color="#fc5c7d"/>
+      <stop stop-color="#9a88ff"/><stop offset="1" stop-color="#fc5c7d"/>
     </linearGradient>
     <filter id="blur"><feGaussianBlur stdDeviation="42"/></filter>
   </defs>
@@ -23,26 +20,23 @@
     <path d="M31 12c-13 0-23 9-23 21 0 10 7 18 17 18h3c3 0 4-3 2-6-2-4 1-8 5-8h5c8 0 14-6 14-14 0-7-9-11-23-11Z" fill="#161229"/>
     <circle cx="19" cy="29" r="3" fill="#fff"/><circle cx="29" cy="22" r="3" fill="#fff"/><circle cx="40" cy="23" r="3" fill="#fff"/>
   </g>
-  <text x="74" y="206" fill="#9a88ff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" letter-spacing="5">PREMIERE PRO · UXP</text>
-  <text x="74" y="278" fill="#f5f2ee" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="800" letter-spacing="-2">FX Palette</text>
-  <text x="78" y="322" fill="#bab5ce" font-family="Arial,Helvetica,sans-serif" font-size="22">Busca, aplica y guarda efectos desde tu teclado.</text>
+  <text x="74" y="206" fill="#9a88ff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" letter-spacing="5">AFTER EFFECTS SCRIPTUI</text>
+  <text x="74" y="278" fill="#f5f2ee" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="800" letter-spacing="-2">Labels PRO</text>
+  <text x="78" y="322" fill="#bab5ce" font-family="Arial,Helvetica,sans-serif" font-size="22">Cambia el color de varias capas con un clic.</text>
   <g transform="translate(78 377)" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="2">
-    <rect width="172" height="44" rx="22" fill="#211d42" stroke="#564c9d"/>
-    <text x="86" y="28" fill="#c8beff" text-anchor="middle">50+ EFECTOS</text>
-    <rect x="186" width="196" height="44" rx="22" fill="#291a30" stroke="#7d405d"/>
-    <text x="284" y="28" fill="#ffb3c3" text-anchor="middle">TRANSICIONES</text>
-    <rect x="396" width="156" height="44" rx="22" fill="#1d2930" stroke="#3e6a7c"/>
-    <text x="474" y="28" fill="#a9e8f5" text-anchor="middle">PRESETS</text>
+    <rect width="172" height="44" rx="22" fill="#211d42" stroke="#564c9d"/><text x="86" y="28" fill="#c8beff" text-anchor="middle">16 COLORES</text>
+    <rect x="186" width="196" height="44" rx="22" fill="#291a30" stroke="#7d405d"/><text x="284" y="28" fill="#ffb3c3" text-anchor="middle">VARIAS CAPAS</text>
+    <rect x="396" width="156" height="44" rx="22" fill="#1d2930" stroke="#3e6a7c"/><text x="474" y="28" fill="#a9e8f5" text-anchor="middle">SCRIPTUI</text>
   </g>
   <g transform="translate(850 102)">
     <rect width="270" height="272" rx="18" fill="#11101a" stroke="#514577" stroke-width="2" opacity=".96"/>
     <rect x="24" y="24" width="222" height="38" rx="9" fill="#211e31" stroke="#39334f"/>
-    <circle cx="43" cy="43" r="6" fill="#9a88ff"/><text x="59" y="48" fill="#a9a3be" font-family="monospace" font-size="13">blur</text>
+    <circle cx="43" cy="43" r="6" fill="#9a88ff"/><text x="59" y="48" fill="#a9a3be" font-family="monospace" font-size="13">labels</text>
     <g font-family="monospace" font-size="12">
-      <rect x="24" y="82" width="222" height="34" rx="8" fill="#28233e"/><circle cx="43" cy="99" r="6" fill="#9a88ff"/><text x="59" y="103" fill="#eeeaff">Gaussian Blur</text>
-      <rect x="24" y="124" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="141" r="6" fill="#fc5c7d"/><text x="59" y="145" fill="#d7d2e2">Fast Blur</text>
-      <rect x="24" y="166" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="183" r="6" fill="#5cf0fc"/><text x="59" y="187" fill="#d7d2e2">Directional Blur</text>
-      <rect x="24" y="208" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="225" r="6" fill="#fcb05c"/><text x="59" y="229" fill="#d7d2e2">Camera Blur</text>
+      <rect x="24" y="82" width="222" height="34" rx="8" fill="#28233e"/><circle cx="43" cy="99" r="6" fill="#9a88ff"/><text x="59" y="103" fill="#eeeaff">Rojo</text>
+      <rect x="24" y="124" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="141" r="6" fill="#fc5c7d"/><text x="59" y="145" fill="#d7d2e2">Amarillo</text>
+      <rect x="24" y="166" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="183" r="6" fill="#5cf0fc"/><text x="59" y="187" fill="#d7d2e2">Aqua</text>
+      <rect x="24" y="208" width="222" height="34" rx="8" fill="#1a1a25"/><circle cx="43" cy="225" r="6" fill="#fcb05c"/><text x="59" y="229" fill="#d7d2e2">Rosa</text>
     </g>
   </g>
 </svg>

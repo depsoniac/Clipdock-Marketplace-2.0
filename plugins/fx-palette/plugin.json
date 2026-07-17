@@ -2,7 +2,7 @@
   "schema": "clipdock.plugin.v1",
   "id": "fx-palette",
   "slug": "fx-palette",
-  "name": "FX Palette",
+  "name": "Labels PRO",
   "author": "Depson",
   "authorLocation": "México",
   "category": "after-effects",
@@ -40,9 +40,9 @@
     }
   ],
   "instructions": [
-    "Instala FX Palette desde ClipDock.",
+    "Instala Labels PRO desde ClipDock.",
     "Cierra y vuelve a abrir After Effects si estaba abierto.",
-    "Abre el panel desde Ventana > FX Palette o Ventana > Labels, según la versión de After Effects.",
+    "Abre el panel desde Ventana > Labels PRO o Ventana > Labels, según la versión de After Effects.",
     "Selecciona una o varias capas y pulsa el color que quieras aplicar."
   ],
   "images": {
