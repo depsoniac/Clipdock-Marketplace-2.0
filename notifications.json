@@ -1,83 +1,147 @@
 {
   "schema": "clipdock.notifications.v1",
-  "updatedAt": "2026-07-15T00:00:00.000Z",
+  "updatedAt": "2026-07-16T00:00:00.000Z",
+  "_comment": "Los campos cuyo nombre empieza con guion bajo son documentación para futuros mantenedores y no se muestran como notificaciones. Solo los elementos de notifications son avisos activos.",
+  "_systemGuide": {
+    "_comment": "Tutorial del sistema de notificaciones de ClipDock. Mantener esta guía junto al archivo para que futuras automatizaciones conozcan el contrato sin tener que deducirlo.",
+    "source": "ClipDock lee este archivo remoto al arrancar y desde el botón Actualizar del centro de notificaciones.",
+    "activeNotifications": "Publicar únicamente avisos que deban aparecer ahora dentro de notifications. Cada aviso necesita un id estable, una revision nueva cuando cambie su contenido, type, title, message y createdAt.",
+    "history": "ClipDock guarda localmente los avisos recibidos. Si un aviso deja de estar en este JSON, no desaparece de inmediato del historial del usuario: permanece hasta que lo abra. Los avisos de actualización detectados automáticamente por componentes, modelos, complementos o el programa se gestionan aparte y no deben copiarse aquí.",
+    "releaseNotifications": "Para una novedad grande usar type release, versionFrom, versionTo, image como objeto {url, alt}, changelog como lista y action. El modal de release es grande y especial; si action.label existe, se usa como texto del botón.",
+    "supportedTypes": [
+      "release",
+      "feature",
+      "announcement",
+      "security",
+      "maintenance"
+    ],
+    "supportedActions": {
+      "open-plugin": "Abre la tienda y después la ficha del complemento indicado por targetId.",
+      "open-url": "Abre una dirección externa indicada por url.",
+      "open-components": "Lleva a Ajustes > Componentes.",
+      "open-models": "Lleva a Ajustes > Modelos IA.",
+      "open-updates": "Lleva a Ajustes > Actualizaciones.",
+      "label": "Texto opcional del botón. Si se omite, ClipDock calcula una etiqueta genérica según la acción."
+    },
+    "publishingChecklist": [
+      "Usar un id estable y cambiar revision cuando se edite un aviso ya publicado.",
+      "No poner ejemplos antiguos dentro de notifications porque volverían a mostrarse al usuario.",
+      "Usar URLs HTTPS públicas para las imágenes y comprobar que el recurso exista.",
+      "Para avisos de actualizaciones reales dejar que ClipDock los detecte automáticamente.",
+      "Después de publicar, esperar el rebuild del Marketplace y actualizar la tienda desde ClipDock."
+    ],
+    "_legacyExamples": [
+      {
+        "id": "example-feature-notification-center",
+        "revision": "2026-07-15-feature-1",
+        "type": "feature",
+        "category": "product",
+        "title": "Nuevo centro de notificaciones",
+        "message": "ClipDock ahora puede mostrar avisos del Marketplace dentro de un centro de notificaciones con historial y previsualizacion.",
+        "changelog": [
+          "Los avisos permanecen guardados aunque desaparezcan del archivo remoto.",
+          "Cada aviso puede incluir imagen, changelog y una accion.",
+          "Los avisos se pueden abrir desde la campana de la barra superior."
+        ],
+        "createdAt": "2026-07-15T00:00:00.000Z"
+      },
+      {
+        "id": "example-doclet-spotlight",
+        "revision": "2026-07-15-doclet-1",
+        "type": "announcement",
+        "category": "doclets",
+        "title": "Doclet destacado: ClipdockBoard",
+        "message": "Conoce un doclet creado para dibujar, organizar post-its y trabajar sobre un lienzo dentro de ClipDock.",
+        "changelog": [
+          "Los doclets viven fuera del nucleo de ClipDock.",
+          "Cada doclet puede incluir todos sus recursos dentro de su paquete.",
+          "El Marketplace conserva la informacion visual y el doclet se distribuye desde su release."
+        ],
+        "createdAt": "2026-07-15T00:05:00.000Z",
+        "action": {
+          "type": "open-plugin",
+          "targetId": "clipdock-postits"
+        }
+      },
+      {
+        "id": "example-security-notice",
+        "revision": "2026-07-15-security-1",
+        "type": "security",
+        "category": "security",
+        "title": "Aviso de proteccion",
+        "message": "Se reforzaron las validaciones de fuentes remotas y de archivos recibidos desde el Marketplace.",
+        "changelog": [
+          "Se revisaron las validaciones de archivos descargados.",
+          "Se reforzo la comprobacion de fuentes remotas.",
+          "Se mejoraron los mensajes cuando una operacion no puede verificarse."
+        ],
+        "createdAt": "2026-07-15T00:10:00.000Z"
+      },
+      {
+        "id": "example-marketplace-maintenance",
+        "revision": "2026-07-15-maintenance-1",
+        "type": "maintenance",
+        "category": "marketplace",
+        "title": "Mantenimiento del Marketplace",
+        "message": "El catalogo puede tardar unos minutos mas en reflejar cambios mientras se reorganizan sus metadatos.",
+        "changelog": [
+          "Los banners y logos continuan viviendo en el Marketplace.",
+          "Los archivos ZIP siguen alojados en los releases de sus repositorios.",
+          "Los complementos instalados no se eliminan durante el mantenimiento."
+        ],
+        "createdAt": "2026-07-15T00:15:00.000Z"
+      },
+      {
+        "id": "example-community-announcement",
+        "revision": "2026-07-15-community-1",
+        "type": "announcement",
+        "category": "community",
+        "title": "Nuevos doclets en preparacion",
+        "message": "Estamos preparando nuevos modulos HTML para ampliar los flujos creativos de ClipDock.",
+        "changelog": [
+          "Se aceptan propuestas para nuevos modulos.",
+          "Los doclets continuaran funcionando como paquetes independientes.",
+          "Las novedades del proyecto se publicaran en el repositorio del Marketplace."
+        ],
+        "createdAt": "2026-07-15T00:20:00.000Z",
+        "action": {
+          "type": "open-url",
+          "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0"
+        }
+      }
+    ]
+  },
   "notifications": [
     {
-      "id": "example-feature-notification-center",
-      "revision": "2026-07-15-feature-1",
-      "type": "feature",
+      "id": "clipdock-2-0-release",
+      "revision": "2.0.0-release-2026-07-16",
+      "type": "release",
       "category": "product",
-      "title": "Nuevo centro de notificaciones",
-      "message": "ClipDock ahora puede mostrar avisos del Marketplace dentro de un centro de notificaciones con historial y previsualizacion.",
+      "versionFrom": "1.2.2",
+      "versionTo": "2.0.0",
+      "title": "ClipDock 2.0 ya está aquí",
+      "message": "Una nueva etapa para ClipDock: amplía tu flujo con doclets, respaldo en la nube y control de componentes, modelos y almacenamiento desde un solo lugar.",
+      "image": {
+        "url": "https://raw.githubusercontent.com/depsoniac/Clipdock-Marketplace-2.0/main/plugins/clipdock-postits/assets/banner.svg",
+        "alt": "ClipdockBoard, el nuevo doclet de pizarrón de ClipDock"
+      },
       "changelog": [
-        "Los avisos permanecen guardados aunque desaparezcan del archivo remoto.",
-        "Cada aviso puede incluir imagen, changelog y una accion.",
-        "Los avisos se pueden abrir desde la campana de la barra superior."
+        "Doclets: instala mini-apps HTML independientes desde el Marketplace; ClipDock funciona como motor y puente sin mezclar su código con el núcleo.",
+        "ClipdockBoard: prueba el nuevo pizarrón con post-its, dibujo a mano, borrador redimensionable, cursores por herramienta y exportación.",
+        "Respaldo en la nube: inicia sesión para sincronizar los entornos y datos de los doclets.",
+        "Marketplace renovado: catálogo remoto, releases separados por complemento, banners y logos visuales, y actualizaciones sin llenar el programa de ZIPs.",
+        "Centro de notificaciones: historial local, avisos con imágenes, acciones y previsualizaciones dentro de ClipDock.",
+        "Componentes y modelos: instalación bajo demanda, actualizaciones y perfiles separados para no descargar todo al iniciar.",
+        "Cola de trabajos y almacenamiento: seguimiento de descargas y procesos, tamaños reales por categoría y limpieza de cachés.",
+        "Mejora de imágenes: comparación antes/después con divisor arrastrable y resultados guardados en la carpeta de salida.",
+        "Conversión y recorte: vista previa adaptable, procesamiento por lotes y mejora de video con IA.",
+        "Motor multimedia: runtime Python separado, yt-dlp y componentes descargables sin empaquetar todo dentro del instalador."
       ],
-      "createdAt": "2026-07-15T00:00:00.000Z"
-    },
-    {
-      "id": "example-doclet-spotlight",
-      "revision": "2026-07-15-doclet-1",
-      "type": "announcement",
-      "category": "doclets",
-      "title": "Doclet destacado: ClipdockBoard",
-      "message": "Conoce un doclet creado para dibujar, organizar post-its y trabajar sobre un lienzo dentro de ClipDock.",
-      "changelog": [
-        "Los doclets viven fuera del nucleo de ClipDock.",
-        "Cada doclet puede incluir todos sus recursos dentro de su paquete.",
-        "El Marketplace conserva la informacion visual y el doclet se distribuye desde su release."
-      ],
-      "createdAt": "2026-07-15T00:05:00.000Z",
+      "createdAt": "2026-07-16T00:00:00.000Z",
       "action": {
         "type": "open-plugin",
-        "targetId": "clipdock-postits"
-      }
-    },
-    {
-      "id": "example-security-notice",
-      "revision": "2026-07-15-security-1",
-      "type": "security",
-      "category": "security",
-      "title": "Aviso de proteccion",
-      "message": "Se reforzaron las validaciones de fuentes remotas y de archivos recibidos desde el Marketplace.",
-      "changelog": [
-        "Se revisaron las validaciones de archivos descargados.",
-        "Se reforzo la comprobacion de fuentes remotas.",
-        "Se mejoraron los mensajes cuando una operacion no puede verificarse."
-      ],
-      "createdAt": "2026-07-15T00:10:00.000Z"
-    },
-    {
-      "id": "example-marketplace-maintenance",
-      "revision": "2026-07-15-maintenance-1",
-      "type": "maintenance",
-      "category": "marketplace",
-      "title": "Mantenimiento del Marketplace",
-      "message": "El catalogo puede tardar unos minutos mas en reflejar cambios mientras se reorganizan sus metadatos.",
-      "changelog": [
-        "Los banners y logos continuan viviendo en el Marketplace.",
-        "Los archivos ZIP siguen alojados en los releases de sus repositorios.",
-        "Los complementos instalados no se eliminan durante el mantenimiento."
-      ],
-      "createdAt": "2026-07-15T00:15:00.000Z"
-    },
-    {
-      "id": "example-community-announcement",
-      "revision": "2026-07-15-community-1",
-      "type": "announcement",
-      "category": "community",
-      "title": "Nuevos doclets en preparacion",
-      "message": "Estamos preparando nuevos modulos HTML para ampliar los flujos creativos de ClipDock.",
-      "changelog": [
-        "Se aceptan propuestas para nuevos modulos.",
-        "Los doclets continuaran funcionando como paquetes independientes.",
-        "Las novedades del proyecto se publicaran en el repositorio del Marketplace."
-      ],
-      "createdAt": "2026-07-15T00:20:00.000Z",
-      "action": {
-        "type": "open-url",
-        "url": "https://github.com/depsoniac/Clipdock-Marketplace-2.0"
+        "targetId": "clipdock-postits",
+        "label": "Prueba los doclets"
       }
     }
   ]
